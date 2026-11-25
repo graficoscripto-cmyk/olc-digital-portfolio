@@ -3,467 +3,605 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>OLC Digital · Gustavo Antunes — Portfólio de sites</title>
-<meta name="description" content="Portfólio da OLC Digital, de Gustavo Antunes (São Sebastião, SP): sites profissionais entregues para turismo, náutica e bem-estar.">
+<title>OLC Digital · Gustavo Antunes — De São Sebastião para a Irlanda</title>
+<meta name="description" content="Portfólio da OLC Digital, de Gustavo Antunes (São Sebastião, SP): 15 sites entregues para turismo, náutica, aventura e bem-estar.">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#06182B">
-<meta property="og:title" content="OLC Digital · Gustavo Antunes — Portfólio">
-<meta property="og:description" content="De São Sebastião para a Irlanda, um site de cada vez. Conheça os sites entregues pela OLC Digital.">
-<meta property="og:image" content="https://graficoscripto-cmyk.github.io/olc-digital-portfolio/img/og-portfolio.jpg">
+<meta name="theme-color" content="#030D18">
+<meta property="og:title" content="OLC Digital · Gustavo Antunes">
+<meta property="og:description" content="De São Sebastião para a Irlanda. Conheça os 15 sites entregues.">
+<meta property="og:image" content="https://graficoscripto-cmyk.github.io/olc-digital-portfolio/img/og-portfolio.jpg?v=2">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2306182B'/%3E%3Cpath d='M12 44C24 20 40 16 52 18' stroke='%2314A873' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='52' cy='18' r='5' fill='%23D49B4B'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23030D18'/%3E%3Cpath d='M14 46C20 24 36 16 50 18' stroke='%2310B981' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='14' cy='46' r='5' fill='%23D49B4B'/%3E%3Ccircle cx='50' cy='18' r='5' fill='%2310B981'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="img/capas/evo.webp">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,300;1,6..72,400&family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/globe.svg">
 <style>
-:root{--ocean:#06182B;--ocean-2:#0A2540;--deep:#041120;--sand:#F1E7D6;--sand-2:#E6D7BE;--ink:#0B1B2B;--emerald:#0F7B55;--emerald-2:#14A873;--copper:#D49B4B;--mist:#9FB3C8;--ease:cubic-bezier(.22,1,.36,1)}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:var(--ocean);color:var(--sand);font:16px/1.55 'Bricolage Grotesque',system-ui,sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-a{color:inherit}img{display:block;max-width:100%}
-h1,h2,h3,p{margin:0}
-.serif{font-family:'Instrument Serif',serif;font-weight:400}
-.eyebrow{font-size:11.5px;letter-spacing:2.2px;text-transform:uppercase;font-weight:700;color:var(--copper)}
-.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+:root{--abyss:#030D18;--sea:#071B2E;--sea-2:#0C2942;--foam:#EEF4F2;--mist:#9DB4C2;--emerald:#10B981;--irish:#0F7B55;--copper:#D49B4B;--copper-2:#EDBB72;--paper:#E8EEEC;--ink:#08192A;--out:cubic-bezier(.22,1,.36,1);--sans:'Schibsted Grotesk',system-ui,sans-serif;--serif:'Newsreader',Georgia,serif;--mono:'DM Mono',ui-monospace,monospace}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--abyss);color:var(--foam);font:400 16px/1.6 var(--sans);-webkit-font-smoothing:antialiased;overflow-x:clip}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,p,figure,ul{margin:0;padding:0}
+ul{list-style:none}
+.wrap{width:min(1240px,calc(100% - 48px));margin-inline:auto}
+.serif{font-family:var(--serif);font-style:italic;font-weight:300;letter-spacing:-.015em}
+:focus-visible{outline:3px solid var(--copper-2);outline-offset:3px;border-radius:8px}
 
-/* NAV */
-.nav{position:fixed;inset:12px 12px auto;z-index:50;display:flex;justify-content:center;transition:transform .55s var(--ease)}
+/* grão sutil */
+.grain{position:absolute;inset:0;pointer-events:none;opacity:.5;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* botões */
+.btn{--bg:var(--foam);--fg:var(--ink);display:inline-flex;align-items:center;gap:14px;min-height:54px;padding:5px 6px 5px 24px;border-radius:999px;background:var(--bg);color:var(--fg);font:700 15px/1 var(--sans);text-decoration:none;border:0;cursor:pointer;white-space:nowrap;transition:transform .16s var(--out)}
+.btn .dot{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:color-mix(in srgb,var(--fg) 12%,transparent);transition:transform .16s var(--out)}
+.btn .dot svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.btn:hover .dot{transform:translate(3px,-2px)}
+.btn:active{transform:scale(.97)}
+.btn-copper{--bg:var(--copper-2);--fg:#1E1304}
+.btn-line{--bg:transparent;--fg:var(--foam);box-shadow:inset 0 0 0 1px rgba(238,244,242,.24)}
+
+/* intro */
+.intro{position:fixed;inset:0;z-index:100;display:none;place-items:center;background:var(--abyss);cursor:pointer}
+.intro.show{display:grid}
+.intro-in{display:grid;justify-items:center;gap:20px;text-align:center;padding:24px}
+.intro svg{width:132px;height:132px;overflow:visible}
+.intro .ln{stroke-dasharray:1;stroke-dashoffset:1;animation:dash .8s var(--out) .08s forwards}
+.intro .ln2{animation-delay:.38s}
+.intro b{font:800 24px/1 var(--sans);letter-spacing:-.02em;animation:up .5s var(--out) .3s backwards}
+.intro b span{font:italic 300 26px var(--serif);color:var(--mist)}
+.intro code{font:400 12px var(--mono);letter-spacing:.12em;color:var(--copper-2);animation:up .5s var(--out) .48s backwards}
+.intro small{position:absolute;bottom:max(26px,env(safe-area-inset-bottom));font-size:13px;color:var(--mist)}
+@keyframes dash{to{stroke-dashoffset:0}}
+@keyframes up{from{opacity:0;transform:translateY(12px)}}
+
+/* nav */
+.nav{position:fixed;top:12px;left:0;right:0;z-index:40;display:flex;justify-content:center;padding:0 12px;transition:transform .45s var(--out)}
 .nav.hide{transform:translateY(-150%)}
-.nav-in{width:min(1180px,100%);height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 8px 0 16px;border-radius:999px;background:rgba(6,24,43,.62);border:1px solid rgba(241,231,214,.12);backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%);box-shadow:0 10px 40px rgba(0,0,0,.25)}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;letter-spacing:-.3px;min-height:44px}
-.brand-mark{width:34px;height:34px}
-.brand small{font-weight:500;color:var(--mist);letter-spacing:0}
-.nav-links{display:flex;gap:4px}
-.nav-links a{text-decoration:none;font-size:14px;font-weight:600;color:#d9e2ec;padding:0 14px;min-height:44px;display:flex;align-items:center;border-radius:999px;transition:background .3s}
-.nav-links a:hover{background:rgba(241,231,214,.08)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:0 22px;border-radius:999px;font-weight:700;font-size:15px;text-decoration:none;border:0;cursor:pointer;transition:transform .5s var(--ease),box-shadow .5s var(--ease),background .3s}
-.btn:active{transform:scale(.96)}
-.btn-gold{background:var(--copper);color:#1b1206;box-shadow:0 10px 30px rgba(212,155,75,.28)}
-.btn-gold:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(212,155,75,.4)}
-.btn-ghost{background:rgba(241,231,214,.06);color:var(--sand);border:1px solid rgba(241,231,214,.22)}
-.btn-ghost:hover{background:rgba(241,231,214,.12)}
-.nav .btn{min-height:44px;padding:0 18px;font-size:14px}
+.nav.hide:focus-within{transform:none}
+.nav-in{width:min(1240px,100%);height:60px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 8px 0 10px;border-radius:999px;background:rgba(4,18,31,.72);box-shadow:inset 0 0 0 1px rgba(238,244,242,.1),0 14px 40px rgba(0,0,0,.35);backdrop-filter:blur(18px) saturate(1.3);-webkit-backdrop-filter:blur(18px) saturate(1.3)}
+.brand{display:flex;align-items:center;gap:10px;min-height:44px;text-decoration:none;font-weight:800;letter-spacing:-.02em;white-space:nowrap}
+.brand svg{width:42px;height:42px}
+.brand em{font:italic 300 17px var(--serif);color:var(--mist)}
+.links{display:flex}
+.links a{display:flex;align-items:center;min-height:44px;padding:0 16px;border-radius:999px;font-size:14px;font-weight:500;color:#CBDAE2;text-decoration:none;transition:background-color .15s,color .15s}
+.links a:hover{background:rgba(238,244,242,.08);color:#fff}
+.nav-cta{display:inline-flex;align-items:center;min-height:44px;padding:0 20px;border-radius:999px;background:var(--copper-2);color:#1E1304;font-weight:700;font-size:14px;text-decoration:none;white-space:nowrap}
 
-/* HERO */
-.hero{position:relative;min-height:100svh;padding:110px 0 70px;display:flex;align-items:center;overflow:hidden;background:radial-gradient(120% 80% at 85% 10%,rgba(15,123,85,.28),transparent 60%),radial-gradient(90% 70% at 0% 100%,rgba(10,37,64,1),transparent 70%),linear-gradient(180deg,#06182B,#041120)}
-.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
-.hero h1{font-size:clamp(44px,6.4vw,92px);line-height:.98;letter-spacing:-2.5px;font-weight:700;margin:20px 0 24px}
-.hero h1 .serif{font-style:italic;letter-spacing:-1px;color:var(--emerald-2)}
-.hero h1 .serif.gold{color:var(--copper)}
-.lead{font-size:clamp(17px,1.6vw,20px);color:#c9d5e1;max-width:520px}
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;padding:108px 0 56px;overflow:hidden;isolation:isolate;background:radial-gradient(60% 70% at 78% 34%,rgba(15,123,85,.30),transparent 68%),radial-gradient(55% 60% at 8% 96%,rgba(212,155,75,.17),transparent 70%),radial-gradient(90% 90% at 50% 0%,#0A2640,transparent 75%),var(--abyss)}
+.hero .grain{z-index:-1}
+.beam{position:absolute;z-index:-1;top:-30%;left:48%;width:34%;height:130%;transform:rotate(24deg);background:linear-gradient(90deg,transparent,rgba(168,230,214,.07),transparent);filter:blur(18px);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.04fr) minmax(0,.96fr);gap:40px;align-items:center}
+.who{display:inline-flex;align-items:center;gap:10px;padding:6px 16px 6px 6px;border-radius:999px;box-shadow:inset 0 0 0 1px rgba(238,244,242,.14);background:rgba(238,244,242,.04);font-size:13.5px;color:#D5E3E8}
+.who i{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--irish);font:700 11px/1 var(--sans);font-style:normal;color:#fff}
+h1{margin:26px 0 0;font-weight:800;font-size:clamp(46px,6.6vw,96px);line-height:.95;letter-spacing:-.04em}
+h1 span{display:block}
+h2,.manifest{text-wrap:balance}
+h1 .serif{font-size:1.07em;line-height:1;padding-bottom:.04em}
+h1 .to{color:#6EE7B7}
+.hero-p{margin-top:26px;max-width:30em;font-size:clamp(16.5px,1.35vw,19px);color:#BFD2DB}
+.hero-p strong{color:var(--foam);font-weight:600}
 .hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
-.sign{margin-top:36px;display:flex;align-items:center;gap:14px;color:var(--mist);font-size:14px}
-.sign b{color:var(--sand);font-weight:700}
-.sign i{width:40px;height:1px;background:rgba(241,231,214,.3)}
 
-.route{position:relative;aspect-ratio:1/1.02;border-radius:32px;background:linear-gradient(160deg,rgba(10,37,64,.9),rgba(4,17,32,.95));border:1px solid rgba(241,231,214,.1);box-shadow:0 40px 100px rgba(0,0,0,.45),inset 0 1px 0 rgba(241,231,214,.06);overflow:hidden}
-.route svg.map{position:absolute;inset:0;width:100%;height:100%}
-.grid-lines line{stroke:rgba(159,179,200,.08);stroke-width:1}
-.trail{fill:none;stroke:url(#trailGrad);stroke-width:3;stroke-linecap:round;stroke-dasharray:var(--len);stroke-dashoffset:var(--len);animation:draw 2.6s var(--ease) .4s forwards}
-.trail-future{fill:none;stroke:rgba(212,155,75,.45);stroke-width:2;stroke-dasharray:3 9;stroke-linecap:round}
-@keyframes draw{to{stroke-dashoffset:0}}
-.wp{opacity:0;transform-box:fill-box;transform-origin:center;transform:scale(0);transition:opacity .4s,transform .6s var(--ease)}
-.wp.on{opacity:1;transform:scale(1)}
-.plane{transform-box:fill-box;transform-origin:center}
-.pin-pulse{transform-box:fill-box;transform-origin:center;animation:pulse 2.4s ease-out infinite}
-@keyframes pulse{0%{transform:scale(.6);opacity:.9}100%{transform:scale(2.6);opacity:0}}
-.coord{position:absolute;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:var(--mist);line-height:1.35}
-.coord b{display:block;font-size:15px;letter-spacing:0;text-transform:none;color:var(--sand);font-weight:700}
-.coord.from{left:7%;bottom:8%}
-.coord.to{right:7%;top:8%;text-align:right}
-.coord.to b{color:var(--emerald-2)}
-.stamp{position:absolute;right:8%;bottom:9%;width:132px;height:132px;border-radius:50%;border:2px dashed rgba(212,155,75,.75);display:grid;place-items:center;text-align:center;color:var(--copper);transform:rotate(-12deg);animation:stampIn 1s var(--ease) 2.6s backwards}
-.stamp span{font-size:10px;letter-spacing:2px;text-transform:uppercase;font-weight:700;line-height:1.5}
-.stamp strong{display:block;font:italic 28px/1 'Instrument Serif',serif;letter-spacing:0;text-transform:none;color:var(--sand);margin:2px 0}
-@keyframes stampIn{from{opacity:0;transform:rotate(-30deg) scale(1.6)}}
-.miles{position:absolute;left:7%;top:8%;font-size:13px;color:var(--mist);max-width:56%}
-.miles b{color:var(--sand);font-weight:700}
+/* atlas: moldura dupla */
+.atlas{position:relative;max-width:620px;width:100%;margin:0 auto}
+.shell{padding:8px;border-radius:40px;background:rgba(238,244,242,.04);box-shadow:inset 0 0 0 1px rgba(238,244,242,.1),0 50px 100px -30px rgba(0,0,0,.7)}
+.core{position:relative;border-radius:32px;overflow:hidden;background:radial-gradient(80% 70% at 50% 38%,#0B2A44,#04111F 75%);box-shadow:inset 0 1px 0 rgba(255,255,255,.08),inset 0 0 0 1px rgba(238,244,242,.07)}
+.tele{display:flex;justify-content:space-between;gap:10px;padding:16px 22px 0;font:400 11px/1.4 var(--mono);color:var(--mist)}
+.tele b{display:block;font:500 12px var(--mono);color:var(--foam)}
+.tele span:last-child{text-align:right}
+.globe{position:relative;aspect-ratio:1;margin:0 14px}
+.globe img,.globe svg{position:absolute;inset:0;width:100%;height:100%}
+.globe svg{overflow:visible}
+.tag{position:absolute;padding:7px 12px 8px;border-radius:14px;background:rgba(3,13,24,.86);box-shadow:inset 0 0 0 1px rgba(238,244,242,.14),0 10px 24px rgba(0,0,0,.4);font:400 10.5px/1.35 var(--mono);color:var(--mist);white-space:nowrap}
+.tag b{display:block;font:700 13px/1.3 var(--sans);color:var(--foam)}
+.tag.dub b{color:#6EE7B7}
+.pulse{transform-box:fill-box;transform-origin:center;animation:pulse 2.6s var(--out) infinite}
+@keyframes pulse{0%{transform:scale(.5);opacity:1}100%{transform:scale(3.2);opacity:0}}
+.seal{position:absolute;right:-18px;top:52%;width:118px;height:118px;z-index:3;filter:drop-shadow(0 14px 26px rgba(0,0,0,.45))}
+.seal .spin{transform-origin:60px 60px;animation:spin 26s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
 
-/* reveal */
-.rv{opacity:0;transform:translateY(28px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
-.rv.in{opacity:1;transform:none}
-.hero .rv{transition-delay:calc(var(--d,0)*90ms)}
+.pass{position:relative;display:grid;grid-template-columns:1fr auto;margin:0 14px 14px;border-radius:22px;background:var(--paper);color:var(--ink);overflow:hidden}
+.pass-main{padding:16px 20px 15px}
+.route-row{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px}
+.code b{display:block;font:800 30px/1 var(--sans);letter-spacing:-.03em}
+.code small{font-size:11.5px;color:#46606F}
+.code:last-child{text-align:right}
+.fly{display:flex;align-items:center;gap:6px;color:var(--irish)}
+.fly i{flex:1;border-top:2px dashed #9DB8B0}
+.fly svg{width:22px;height:22px;fill:currentColor;transform:rotate(90deg)}
+.fields{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:10px;margin-top:13px;padding-top:11px;border-top:1px solid #CBD8D4}
+.fields dt{font-size:11px;color:#52707E}
+.fields dd{margin:0;font-weight:700;font-size:13px;line-height:1.35}
+.stub{display:flex;flex-direction:column;justify-content:center;gap:8px;padding:14px 18px;border-left:2px dashed #B7C9C4;background:#DCE6E3}
+.bars{display:flex;align-items:flex-end;gap:3px;height:46px}
+.bars i{width:5px;height:100%;border-radius:2px;background:var(--c);transform-origin:bottom}
+.bars i:nth-child(3n){height:74%}.bars i:nth-child(4n){height:88%}
+.stub small{font:500 10.5px/1.3 var(--mono);color:#2E4A59}
 
-/* SOBRE */
-.about{background:var(--sand);color:var(--ink);padding:120px 0}
-.about .eyebrow{color:var(--emerald)}
-.about h2{font-size:clamp(36px,4.6vw,64px);line-height:1.02;letter-spacing:-1.6px;font-weight:700;margin:16px 0 0;max-width:820px}
-.about h2 .serif{font-style:italic;color:var(--emerald)}
-.chapters{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:64px}
-.chapter{position:relative;padding:34px 30px 32px;border-radius:26px;background:#FAF4EA;border:1px solid #E2D3BA;transition:transform .6s var(--ease),box-shadow .6s var(--ease)}
-.chapter:hover{transform:translateY(-6px);box-shadow:0 24px 50px rgba(11,27,43,.1)}
-.chapter .ic{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;margin-bottom:26px}
-.chapter .ic svg{width:28px;height:28px}
-.chapter h3{font-size:24px;letter-spacing:-.5px;font-weight:700;margin-bottom:10px}
-.chapter p{color:#4a5866;font-size:16px}
-.chapter .tag{position:absolute;top:30px;right:28px;font-size:11px;letter-spacing:1.6px;font-weight:700;color:#9a8566}
-.c1 .ic{background:#DCE8F3}.c2 .ic{background:#F4E3C8}.c3 .ic{background:#D3EEE2}
-.quote{margin-top:72px;display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:center;max-width:900px}
-.quote i{display:block;width:64px;height:2px;background:var(--copper)}
-.quote p{font:italic clamp(26px,3vw,40px)/1.15 'Instrument Serif',serif;color:var(--ink)}
+/* história */
+.story{position:relative;padding:150px 0 140px;background:linear-gradient(180deg,var(--abyss),#06231F 32%,#07251F 70%,var(--abyss));overflow:hidden}
+.manifest{font-weight:600;font-size:clamp(30px,4.4vw,62px);line-height:1.12;letter-spacing:-.03em;max-width:18.5em}
+.manifest .serif{color:#8FE8C4;font-size:1.08em}
+.chap{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;margin-top:100px}
+.chap-aside{position:sticky;top:110px;align-self:start}
+.chap-aside h2{font:300 italic clamp(30px,3.4vw,46px)/1.1 var(--serif);color:var(--copper-2)}
+.chap-aside p{margin-top:16px;color:var(--mist);max-width:26em}
+.line{position:relative;padding-left:54px}
+.line::before,.line .fill{content:"";position:absolute;left:13px;top:10px;bottom:10px;width:2px;background:rgba(238,244,242,.13)}
+.line .fill{background:linear-gradient(var(--copper),var(--emerald));transform-origin:top}
+.stop{position:relative;padding-bottom:70px}
+.stop:last-child{padding-bottom:0}
+.stop::before{content:"";position:absolute;left:-49px;top:8px;width:18px;height:18px;border-radius:50%;background:#06231F;box-shadow:inset 0 0 0 2px var(--c),0 0 0 6px color-mix(in srgb,var(--c) 16%,transparent)}
+.stop code{font:400 12px var(--mono);color:var(--c)}
+.stop h3{margin:6px 0 10px;font-size:clamp(26px,2.8vw,38px);line-height:1.1;letter-spacing:-.025em;font-weight:700}
+.stop p{max-width:34em;color:#BFD2DB;font-size:17px}
+.flag{display:inline-block;width:.95em;height:.63em;margin-left:.12em;border-radius:3px}
+.stop ul{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.stop li{padding:8px 14px;border-radius:999px;font-size:13px;font-weight:500;box-shadow:inset 0 0 0 1px rgba(238,244,242,.16)}
 
-/* CARROSSEL */
-.showcase{position:relative;padding:120px 0 110px;background:radial-gradient(80% 60% at 50% 0%,rgba(15,123,85,.25),transparent 70%),linear-gradient(180deg,#041120,#06182B 60%,#041120);overflow:hidden}
-.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap}
-.sec-head h2{font-size:clamp(36px,4.6vw,64px);line-height:1;letter-spacing:-1.6px;font-weight:700;margin-top:14px}
-.sec-head h2 .serif{font-style:italic;color:var(--emerald-2)}
-.sec-head p{color:var(--mist);max-width:360px}
-.stage{position:relative;height:clamp(560px,62vw,700px);margin-top:56px;perspective:1600px;touch-action:pan-y;user-select:none;-webkit-user-select:none;cursor:grab}
-.stage.dragging{cursor:grabbing}
-.slide{position:absolute;left:50%;top:0;width:var(--sw);margin-left:calc(var(--sw)/-2);will-change:transform,opacity;text-decoration:none}
-.frame{position:relative}
-.device{position:relative;border-radius:18px;background:#0d1a28;border:1px solid rgba(241,231,214,.14);box-shadow:0 50px 90px rgba(0,0,0,.55);overflow:hidden}
-.bar{height:34px;display:flex;align-items:center;gap:7px;padding:0 14px;background:#0f2133;border-bottom:1px solid rgba(241,231,214,.08)}
-.bar i{width:10px;height:10px;border-radius:50%;background:#2b3f55}
-.bar i:nth-child(1){background:#e8705f}.bar i:nth-child(2){background:#e7b54a}.bar i:nth-child(3){background:#5cc178}
-.bar span{flex:1;margin-left:10px;height:20px;border-radius:6px;background:rgba(241,231,214,.06);font-size:11px;color:var(--mist);display:flex;align-items:center;padding:0 10px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.screen{aspect-ratio:1200/630;overflow:hidden;background:#0a1624}
-.screen img{width:100%;height:100%;object-fit:cover;display:block}
-.phone{position:absolute;right:-18px;bottom:-30px;width:20%;transition:opacity .3s;aspect-ratio:9/19;border-radius:22px;padding:6px;background:#0b1622;border:1px solid rgba(241,231,214,.18);box-shadow:0 26px 50px rgba(0,0,0,.6)}
-.phone img{width:100%;height:100%;object-fit:cover;border-radius:16px;display:block}
-.phone::before{content:"";position:absolute;top:11px;left:50%;width:30%;height:5px;margin-left:-15%;border-radius:4px;background:#0b1622;z-index:1}
-.info{display:flex;align-items:center;gap:16px;margin-top:34px;transition:opacity .4s}
-.logo-tile{flex:none;width:60px;height:60px;border-radius:16px;background:#fff;display:grid;place-items:center;overflow:hidden;box-shadow:0 8px 20px rgba(0,0,0,.25)}
-.logo-tile img{width:100%;height:100%;object-fit:contain}
-.info h3{font-size:clamp(22px,2.2vw,28px);letter-spacing:-.6px;font-weight:700;line-height:1.1}
-.info .meta{font-size:14px;color:var(--mist);margin-top:3px}
-.info .go{margin-left:auto;flex:none}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;transition:opacity .4s}
-.chips span{font-size:12.5px;font-weight:600;padding:7px 12px;border-radius:999px;background:rgba(241,231,214,.07);border:1px solid rgba(241,231,214,.12);color:#d9e2ec}
-.chips span:first-child{border-color:var(--accent);background:color-mix(in srgb,var(--accent) 22%,transparent)}
-.controls{display:flex;align-items:center;gap:18px;margin-top:10px}
-.arrow{width:52px;height:52px;border-radius:50%;border:1px solid rgba(241,231,214,.25);background:rgba(241,231,214,.05);color:var(--sand);display:grid;place-items:center;cursor:pointer;transition:transform .5s var(--ease),background .3s}
-.arrow:hover{background:rgba(241,231,214,.14);transform:scale(1.06)}
-.arrow:active{transform:scale(.92)}
+/* showcase */
+@property --active{syntax:'<color>';inherits:true;initial-value:#9EAA7D}
+.show{position:relative;padding:110px 0 110px;overflow:hidden;isolation:isolate;transition:--active .9s var(--out);background:var(--abyss)}
+.show::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(70% 52% at 50% 46%,color-mix(in srgb,var(--active) 46%,transparent),transparent 72%),radial-gradient(40% 30% at 12% 92%,color-mix(in srgb,var(--active) 24%,transparent),transparent 70%),radial-gradient(36% 28% at 90% 8%,color-mix(in srgb,var(--active) 18%,transparent),transparent 70%)}
+.show::after{content:"";position:absolute;left:50%;top:52%;width:150%;height:420px;z-index:-1;transform:translateX(-50%) perspective(900px) rotateX(62deg);transform-origin:50% 0;background:repeating-linear-gradient(90deg,rgba(238,244,242,.07) 0 1px,transparent 1px 72px),repeating-linear-gradient(0deg,rgba(238,244,242,.07) 0 1px,transparent 1px 56px);-webkit-mask-image:linear-gradient(transparent,#000 30%,transparent 92%);mask-image:linear-gradient(transparent,#000 30%,transparent 92%)}
+.head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:18px 40px}
+.head h2{font-size:clamp(38px,5.4vw,76px);line-height:1;letter-spacing:-.035em;font-weight:800}
+.head h2 .serif{display:block;font-size:1.06em}
+.head p{max-width:24em;color:var(--mist)}
+.strip{display:flex;gap:10px;overflow-x:auto;scrollbar-width:none;padding:6px max(24px,calc((100% - 1240px)/2)) 10px;margin-top:42px;scroll-padding-inline:24px}
+.strip::-webkit-scrollbar{display:none}
+.pill{flex:none;display:flex;align-items:center;gap:10px;min-height:52px;padding:5px 18px 5px 6px;border-radius:999px;border:0;background:rgba(238,244,242,.06);box-shadow:inset 0 0 0 1px rgba(238,244,242,.11);color:#C6D6DE;font:600 13.5px var(--sans);cursor:pointer;transition:background-color .25s,color .25s,box-shadow .25s}
+.pill:hover{background:rgba(238,244,242,.11)}
+.pill[aria-current="true"]{background:var(--foam);color:var(--ink);box-shadow:0 0 0 3px color-mix(in srgb,var(--active) 70%,transparent)}
+.av{flex:none;width:42px;height:42px;border-radius:50%;overflow:hidden;display:grid;place-items:center;background:var(--lbg)}
+.av img{width:var(--lw);height:var(--lw);object-fit:var(--lf)}
+
+.stage{position:relative;margin:34px auto 0;width:100%;height:calc(var(--dw)*.625 + 96px);--dw:min(900px,64vw,calc((100svh - 300px)*1.27));touch-action:pan-y;user-select:none;-webkit-user-select:none;cursor:grab}
+.stage.drag{cursor:grabbing}
+.slide{position:absolute;left:50%;top:0;width:var(--dw);margin-left:calc(var(--dw)/-2);will-change:transform,opacity}
+.mac{position:relative;padding:7px;border-radius:24px;background:linear-gradient(160deg,rgba(238,244,242,.2),rgba(238,244,242,.04) 40%,rgba(238,244,242,.1));box-shadow:0 60px 90px -30px rgba(0,0,0,.75),0 30px 90px -20px color-mix(in srgb,var(--brand) 45%,transparent)}
+.mac-core{border-radius:18px;overflow:hidden;background:#06121F}
+.chrome{display:flex;align-items:center;gap:7px;height:40px;padding:0 14px}
+.chrome i{width:10px;height:10px;border-radius:50%;background:#30465A}
+.url{margin:0 auto;display:flex;align-items:center;justify-content:center;gap:7px;width:min(460px,70%);height:28px;border-radius:9px;background:rgba(238,244,242,.08);font:400 12px var(--mono);color:#B9CCD6;text-decoration:none;white-space:nowrap;overflow:hidden;padding:0 10px}
+.url span{min-width:0;overflow:hidden;text-overflow:ellipsis}
+.url svg{flex:none;width:11px;height:11px;fill:none;stroke:currentColor;stroke-width:2}
+.shot{display:block;aspect-ratio:1440/900;overflow:hidden}
+.shot img{width:100%;height:100%;object-fit:cover;pointer-events:none}
+.cel{position:absolute;z-index:2;right:calc(var(--dw)*-.065);bottom:calc(var(--dw)*-.09);width:calc(var(--dw)*.205);padding:6px;border-radius:calc(var(--dw)*.036);background:linear-gradient(150deg,#46596A,#0B141E 28%,#0B141E 74%,#3A4C5C);box-shadow:0 40px 60px -14px rgba(0,0,0,.75)}
+.cel-in{position:relative;display:block;aspect-ratio:390/844;border-radius:calc(var(--dw)*.029);overflow:hidden;background:#000}
+.cel-in img{width:100%;height:100%;object-fit:cover;pointer-events:none}
+.cel::after{content:"";position:absolute;left:50%;top:11px;width:26%;height:3.2%;transform:translateX(-50%);border-radius:99px;background:#05090E}
+.slide:not(.on) .shot,.slide:not(.on) .url{pointer-events:none}
+
+.panel{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr) auto;gap:20px 36px;align-items:center;margin-top:44px;padding:22px 24px;border-radius:30px;background:rgba(4,17,30,.7);box-shadow:inset 0 0 0 1px rgba(238,244,242,.11),inset 0 1px 0 rgba(255,255,255,.05)}
+.id{display:flex;align-items:center;gap:16px;min-width:0}
+.id .av{width:66px;height:66px}
+.id h3{font-size:clamp(21px,2vw,27px);line-height:1.15;letter-spacing:-.025em;font-weight:700}
+.id p{margin-top:3px;font-size:13.5px;color:var(--mist);line-height:1.45}
+.done{display:flex;flex-wrap:wrap;gap:8px}
+.done li{display:flex;align-items:center;gap:8px;padding:7px 13px;border-radius:999px;background:rgba(238,244,242,.06);font-size:13px;font-weight:500}
+.done li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--active)}
+.swap{transition:opacity .22s,transform .35s var(--out)}
+.swapping .swap{opacity:0;transform:translateY(8px)}
+.ctl{display:flex;align-items:center;gap:14px;margin-top:20px}
+.arrow{flex:none;width:54px;height:54px;border-radius:50%;border:0;display:grid;place-items:center;background:rgba(238,244,242,.07);box-shadow:inset 0 0 0 1px rgba(238,244,242,.2);color:var(--foam);cursor:pointer;transition:background-color .2s,transform .16s var(--out)}
+.arrow:hover{background:rgba(238,244,242,.15)}
+.arrow:active{transform:scale(.94)}
 .arrow svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.progress{flex:1;height:3px;border-radius:3px;background:rgba(241,231,214,.12);overflow:hidden}
-.progress i{display:block;height:100%;width:100%;background:linear-gradient(90deg,var(--emerald-2),var(--copper));transform-origin:0 50%;transform:scaleX(.066);transition:transform .6s var(--ease)}
-.counter{font-variant-numeric:tabular-nums;font-weight:700;color:var(--mist);min-width:70px;text-align:right}
-.counter b{color:var(--sand)}
-.hint{font-size:13px;color:var(--mist);margin-top:14px}
+.track{flex:1;height:3px;border-radius:3px;background:rgba(238,244,242,.14);overflow:hidden}
+.track i{display:block;height:100%;background:var(--active);transform-origin:left;transition:transform .6s var(--out)}
+.count{font:400 14px var(--mono);color:var(--mist);white-space:nowrap}
+.count b{font-size:22px;font-weight:500;color:var(--foam)}
 
-/* VITRINE */
-.gallery{background:var(--sand);color:var(--ink);padding:120px 0 130px}
-.gallery .eyebrow{color:var(--emerald)}
-.gallery .sec-head h2 .serif{color:var(--emerald)}
-.gallery .sec-head p{color:#58687a}
-.filters{display:flex;gap:10px;overflow-x:auto;scrollbar-width:none;margin:44px -4px 40px;padding:4px}
+/* vitrine */
+.vit{background:var(--paper);color:var(--ink);padding:130px 0 140px;border-radius:44px 44px 0 0}
+.vit .head p{color:#486271}
+.vit .head h2 .serif{color:var(--irish)}
+.filters{display:flex;gap:10px;overflow-x:auto;scrollbar-width:none;padding:4px;margin:42px -4px 38px}
 .filters::-webkit-scrollbar{display:none}
-.filter{flex:none;min-height:46px;padding:0 20px;border-radius:999px;border:1px solid #CDBB9C;background:transparent;color:#3c4a58;font:600 14px 'Bricolage Grotesque',sans-serif;cursor:pointer;transition:transform .5s var(--ease),background .3s,color .3s}
-.filter:active{transform:scale(.95)}
-.filter[aria-pressed="true"]{background:var(--ocean);border-color:var(--ocean);color:var(--sand)}
-.filter em{font-style:normal;opacity:.6;margin-left:6px}
-.bento{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-flow:dense;gap:24px}
-.card{grid-column:span 4;position:relative;display:flex;flex-direction:column;text-decoration:none;border-radius:26px;overflow:hidden;background:#0B1B2B;color:var(--sand);box-shadow:0 14px 40px rgba(11,27,43,.14);transition:transform .6s var(--ease),box-shadow .6s var(--ease);animation:cardIn .7s var(--ease) backwards;animation-delay:calc(var(--i,0)*55ms)}
-.card.wide{grid-column:span 8}
-.card:hover{transform:translateY(-8px);box-shadow:0 30px 60px rgba(11,27,43,.25)}
-@keyframes cardIn{from{opacity:0;transform:translateY(30px) scale(.97)}}
-.card .pic{position:relative;aspect-ratio:1200/630;overflow:hidden}
-.card.wide .pic{aspect-ratio:1200/560}
-.card .pic img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease)}
-.card:hover .pic img{transform:scale(1.06)}
-.card .body{display:flex;align-items:center;gap:14px;padding:20px 22px 22px;background:linear-gradient(180deg,var(--accent),#0B1B2B 140%)}
-.card .logo-tile{width:48px;height:48px;border-radius:13px}
-.card h3{font-size:19px;letter-spacing:-.3px;font-weight:700;line-height:1.15}
-.card .meta{font-size:13px;color:#c2cfdc;margin-top:2px}
-.card .ext{margin-left:auto;flex:none;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(241,231,214,.1);transition:transform .5s var(--ease),background .3s}
-.card:hover .ext{transform:rotate(45deg);background:var(--copper);color:#1b1206}
-.card .ext svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round}
-.card .niche{position:absolute;left:16px;top:16px;font-size:11px;letter-spacing:1.2px;text-transform:uppercase;font-weight:700;padding:7px 11px;border-radius:999px;background:rgba(4,17,32,.72);backdrop-filter:blur(8px);color:var(--sand)}
+.chipf{flex:none;min-height:48px;padding:0 8px 0 20px;display:flex;align-items:center;gap:10px;border-radius:999px;border:0;background:transparent;box-shadow:inset 0 0 0 1px #B4C6C1;font:600 14px var(--sans);color:#1D384A;cursor:pointer;transition:background-color .2s,color .2s}
+.chipf span{min-width:32px;height:32px;padding:0 6px;border-radius:99px;display:grid;place-items:center;background:#D3DEDB;font:500 12px var(--mono);color:#1D384A}
+.chipf[aria-pressed="true"]{background:var(--ink);color:#fff;box-shadow:none}
+.chipf[aria-pressed="true"] span{background:var(--emerald);color:#03231A}
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:56px 28px;align-items:start}
+.work{grid-column:span var(--span);min-width:0}
+.work-shell{display:block;position:relative;padding:7px;border-radius:32px;background:#D5E0DD;box-shadow:inset 0 0 0 1px #C2D2CD}
+.work-stage{position:relative;display:block;overflow:hidden;border-radius:26px;height:var(--h);background:radial-gradient(90% 90% at 78% 8%,color-mix(in srgb,var(--brand) 62%,#0A2236),#071726 76%)}
+.w-mac{position:absolute;left:7%;top:11%;width:80%;border-radius:12px;overflow:hidden;background:#0A1826;box-shadow:0 30px 50px -14px rgba(0,0,0,.65),0 0 0 1px rgba(255,255,255,.12);transition:transform .6s var(--out)}
+.w-mac::before{content:"";display:block;height:20px;background:radial-gradient(circle 3.5px at 13px 10px,#52697C 97%,transparent),radial-gradient(circle 3.5px at 25px 10px,#52697C 97%,transparent),radial-gradient(circle 3.5px at 37px 10px,#52697C 97%,transparent)}
+.w-mac img{width:100%;height:auto;aspect-ratio:1440/900}
+.work.solo .w-mac{width:56%;left:13%;top:8%}
+.work.solo .w-cel{right:15%}
+.w-cel{position:absolute;right:4%;bottom:3%;height:64%;aspect-ratio:390/844;padding:4px;border-radius:22px;background:#0B141E;box-shadow:0 24px 40px -8px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.16);transition:transform .6s var(--out)}
+.w-cel img{width:100%;height:100%;object-fit:cover;border-radius:18px}
+a.work-shell:hover .w-mac{transform:translateY(-6px)}
+a.work-shell:hover .w-cel{transform:translateY(-14px)}
+.w-info{display:flex;align-items:center;gap:14px;padding:18px 6px 0}
+.w-info .av{width:52px;height:52px;box-shadow:0 0 0 1px #BCCDC8}
+.w-info h3{font-size:19px;line-height:1.2;letter-spacing:-.02em;font-weight:700}
+.w-info p{font-size:13.5px;color:#486271;line-height:1.45}
+.w-info>div{min-width:0;flex:1}
+.w-go{flex:none;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:#fff;transition:background-color .2s,transform .3s var(--out)}
+.w-go:hover{background:var(--irish);transform:rotate(45deg)}
+.w-go svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.w-tags{display:flex;flex-wrap:wrap;gap:7px;padding:13px 6px 0}
+.w-tags li{padding:5px 11px;border-radius:999px;font-size:12.5px;font-weight:500;color:#213E50;box-shadow:inset 0 0 0 1px #BFD0CB}
 
-/* CTA */
-.cta{position:relative;padding:130px 0;background:radial-gradient(70% 90% at 80% 20%,rgba(20,168,115,.5),transparent 60%),linear-gradient(135deg,#0B4F38,#0F7B55 55%,#0A3D2C);overflow:hidden;text-align:center}
-.cta h2{font-size:clamp(38px,5.4vw,76px);line-height:1;letter-spacing:-2px;font-weight:700;max-width:900px;margin:18px auto 22px}
-.cta h2 .serif{font-style:italic;color:#F6D9A8}
-.cta p{color:#d6efe3;font-size:18px;max-width:520px;margin:0 auto 36px}
-.cta .eyebrow{color:#F6D9A8}
-.cta .ring{position:absolute;border-radius:50%;border:1px solid rgba(241,231,214,.14);pointer-events:none}
-footer{background:var(--deep);padding:40px 0 48px;color:var(--mist);font-size:14px}
-footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:center}
-footer b{color:var(--sand)}
-.wa-fab{position:fixed;right:18px;bottom:18px;z-index:40;width:56px;height:56px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 12px 30px rgba(0,0,0,.35);transition:transform .5s var(--ease),opacity .4s;opacity:0;transform:scale(.6);pointer-events:none}
-.wa-fab.on{opacity:1;transform:scale(1);pointer-events:auto}
-.wa-fab svg{width:28px;height:28px;fill:#fff}
-:focus-visible{outline:3px solid var(--copper);outline-offset:3px}
+/* cta */
+.cta{position:relative;overflow:hidden;isolation:isolate;padding:150px 0 130px;text-align:center;background:radial-gradient(70% 80% at 50% 118%,rgba(212,155,75,.5),transparent 70%),radial-gradient(90% 90% at 50% 0%,#12936A,#0B5A41 55%,#052E23)}
+.cta svg.arcs{position:absolute;z-index:-1;left:50%;bottom:-2px;width:max(1300px,110%);transform:translateX(-50%);opacity:.5}
+.cta h2{margin:0 auto;max-width:12em;font-size:clamp(40px,6.4vw,92px);line-height:.98;letter-spacing:-.038em;font-weight:800}
+.cta h2 .serif{display:block;color:#FBE2B8;font-size:1.04em}
+.cta p{margin:24px auto 38px;max-width:30em;font-size:18px;color:#D3F3E6}
+footer{padding:44px 0 calc(44px + env(safe-area-inset-bottom));background:var(--abyss);color:var(--mist);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+footer b{color:var(--foam)}
+.fab{position:fixed;right:18px;bottom:max(18px,env(safe-area-inset-bottom));z-index:35;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:#25D366;box-shadow:0 14px 30px rgba(0,0,0,.4);transition:opacity .25s,transform .35s var(--out),visibility .25s}
+.fab.off{opacity:0;visibility:hidden;transform:translateY(14px) scale(.95)}
+.fab svg{width:29px;height:29px;fill:#fff}
 
-/* RESPONSIVO */
-@media (max-width:980px){
- .hero-grid{grid-template-columns:1fr;gap:40px}
- .route{order:-1;max-width:560px;width:100%;margin:0 auto;aspect-ratio:1/.86}
- .chapters{grid-template-columns:1fr}
- .card,.card.wide{grid-column:span 6}
- .card.wide .pic{aspect-ratio:1200/630}
+@media (max-width:1024px){
+ .hero-grid{grid-template-columns:minmax(0,1fr);gap:56px}
+ .hero{padding-top:112px}
+ .atlas{max-width:560px}
+ .chap{grid-template-columns:minmax(0,1fr);gap:48px;margin-top:72px}
+ .chap-aside{position:static}
+ .panel{grid-template-columns:minmax(0,1fr);text-align:left}
+ .panel .btn{justify-content:space-between;width:100%}
+ .grid{gap:48px 20px}
+ .work{grid-column:span 6}
+ .work.solo{grid-column:1/-1}
 }
 @media (max-width:720px){
- .nav-links{display:none}
- .hero{padding:92px 0 64px;min-height:0}
- .hero h1{letter-spacing:-1.6px}
- .miles{max-width:46%;font-size:12px}.coord{font-size:10px}.coord b{font-size:13.5px}
- .stamp{width:104px;height:104px}.stamp strong{font-size:22px}
- .about,.gallery{padding:88px 0}
- .showcase{padding:88px 0 80px}
- .chapter{padding:28px 24px}
- .quote{grid-template-columns:1fr;gap:16px}
- .card,.card.wide{grid-column:1/-1}
- .bento{gap:20px}
- .stage{height:auto;min-height:540px}
- .info{flex-wrap:wrap}
- .info .go{margin-left:0;width:100%}
- .phone{width:19%;right:-6px;bottom:-14px;border-radius:16px;padding:4px}.phone img{border-radius:12px}
- .controls{padding-right:66px;gap:12px}
- .cta{padding:96px 0}
+ .wrap{width:calc(100% - 40px)}
+ .links{display:none}
+ .brand em{display:none}
+ .hero{padding:104px 0 48px;min-height:0}
+ h1{font-size:clamp(44px,13.4vw,64px)}
+ .hero-cta .btn{width:100%;justify-content:space-between}
+ .shell{padding:6px;border-radius:30px}
+ .core{border-radius:24px}
+ .tele{padding:14px 16px 0;font-size:10px}.tele b{font-size:11px}
+ .globe{margin:0 4px}
+ .tag{font-size:9.5px;padding:5px 9px 6px}.tag b{font-size:11.5px}
+ .seal{width:82px;height:82px;right:6px;top:auto;bottom:calc(100% - 100vw);display:none}
+ .pass{grid-template-columns:minmax(0,1fr);margin:0 8px 8px;border-radius:18px}
+ .stub{flex-direction:row;align-items:center;justify-content:space-between;border-left:0;border-top:2px dashed #B7C9C4}
+ .bars{height:30px}
+ .pass-main{padding:14px 16px}
+ .code b{font-size:26px}
+ .fields{grid-template-columns:1fr 1fr}.fields>div:first-child{grid-column:1/-1}
+ .story{padding:100px 0 90px}
+ .show{padding:96px 0 90px}
+ .strip{padding-inline:20px;margin-top:30px}
+ .stage{--dw:calc(100vw - 64px);height:calc(var(--dw)*.625 + 54px + var(--dw)*.44);margin-top:26px}
+ .mac{padding:4px;border-radius:16px}.mac-core{border-radius:12px}
+ .chrome{height:34px;padding:0 10px;gap:5px}.chrome i{width:7px;height:7px}
+ .url{width:78%;font-size:10.5px;height:24px}
+ .cel{width:calc(var(--dw)*.345);right:-6px;bottom:calc(var(--dw)*-.44);padding:4px;border-radius:22px}
+ .cel-in{border-radius:18px}.cel::after{top:8px}
+ .panel{margin-top:22px;padding:18px;border-radius:24px}
+ .id .av{width:54px;height:54px}
+ .vit{padding:96px 0 100px;border-radius:30px 30px 0 0}
+ .work,.work.solo{grid-column:1/-1}
+ .work.solo .w-mac{width:80%;left:7%;top:11%}.work.solo .w-cel{right:5%}
+ .grid{grid-template-columns:minmax(0,1fr);gap:44px}
+ .work-stage{height:clamp(240px,70vw,380px)}
+ .cta{padding:104px 0 96px}
+ .cta h2{font-size:clamp(34px,9.6vw,48px)}
+ .cta .btn{width:100%;max-width:360px;justify-content:space-between}
 }
-@media (max-width:400px){.wrap{width:calc(100% - 32px)}.brand small{display:none}.hero h1{font-size:42px}}
-@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}.trail{stroke-dashoffset:0}.wp{opacity:1;transform:none}}
+@media (max-width:400px){.nav-cta{padding:0 16px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition-duration:.01ms!important}.intro{display:none!important}}
 </style>
 </head>
 <body>
 
+<div class="intro" id="intro" aria-hidden="true">
+ <div class="intro-in">
+  <svg viewBox="0 0 120 120"><circle class="ln" pathLength="1" cx="60" cy="60" r="56" fill="none" stroke="#1D4B63" stroke-width="1.5"/><path class="ln ln2" pathLength="1" d="M28 84C34 48 62 30 92 34" fill="none" stroke="#10B981" stroke-width="4" stroke-linecap="round"/><circle cx="28" cy="84" r="5" fill="#D49B4B"/><circle cx="92" cy="34" r="5" fill="#10B981"/></svg>
+  <b>OLC Digital <span>· Gustavo Antunes</span></b>
+  <code>SSZ 23°S → DUB 53°N</code>
+ </div>
+ <small>Toque para pular</small>
+</div>
+
 <header class="nav" id="nav">
  <div class="nav-in">
   <a class="brand" href="#topo" aria-label="OLC Digital, voltar ao início">
-   <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="18" fill="#0A2540"/><path d="M13 45C24 22 40 17 51 19" stroke="#14A873" stroke-width="4.5" fill="none" stroke-linecap="round"/><circle cx="13" cy="45" r="4" fill="#F1E7D6"/><circle cx="51" cy="19" r="5" fill="#D49B4B"/></svg>
-   <span>OLC Digital <small>· Gustavo Antunes</small></span>
+   <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="31" fill="#0C2942"/><path d="M18 44C22 27 34 20 46 21" stroke="#10B981" stroke-width="4" fill="none" stroke-linecap="round"/><circle cx="18" cy="44" r="4.5" fill="#D49B4B"/><circle cx="46" cy="21" r="4.5" fill="#10B981"/></svg>
+   OLC Digital <em>Gustavo Antunes</em>
   </a>
-  <nav class="nav-links" aria-label="Seções">
-   <a href="#sobre">Quem sou</a><a href="#projetos">Projetos</a><a href="#vitrine">Vitrine</a>
-  </nav>
-  <a class="btn btn-gold" href="https://wa.me/5512988685845?text=Opa%20Gustavo!%20Vi%20o%20portf%C3%B3lio%20da%20OLC%20Digital%20e%20quero%20um%20site%20profissional%20para%20minha%20empresa." target="_blank" rel="noopener">Falar comigo</a>
+  <nav class="links" aria-label="Seções"><a href="#historia">Quem sou</a><a href="#projetos">Projetos</a><a href="#vitrine">Vitrine</a></nav>
+  <a class="nav-cta wa" target="_blank" rel="noopener">Falar comigo</a>
  </div>
 </header>
 
 <main id="topo">
- <section class="hero">
-  <div class="wrap hero-grid">
-   <div>
-    <span class="eyebrow rv" style="--d:0">OLC Digital · Gustavo Antunes</span>
-    <h1 class="rv" style="--d:1">De São Sebastião <span class="serif">para a Irlanda,</span> <span class="serif gold">um site de cada vez.</span></h1>
-    <p class="lead rv" style="--d:2">Sites que viram reservas diretas no Google, no Maps e nas IAs.</p>
-    <div class="hero-cta rv" style="--d:3">
-     <a class="btn btn-gold" href="#projetos">Ver os sites entregues <span aria-hidden="true">↓</span></a>
-     <a class="btn btn-ghost" href="#sobre">Conhecer a jornada</a>
+<section class="hero" id="hero">
+ <div class="beam" aria-hidden="true"></div><div class="grain" aria-hidden="true"></div>
+ <div class="wrap hero-grid">
+  <div class="hero-copy">
+   <p class="who intro-up"><i>GA</i> Gustavo Antunes, fundador da OLC Digital</p>
+   <h1><span class="intro-up">De São Sebastião</span><span class="serif to intro-up">para a Irlanda.</span></h1>
+   <p class="hero-p intro-up">Sou do <strong>Litoral Norte de São Paulo</strong>. Construo sites para empresas brasileiras serem encontradas no Google, no Maps e nas IAs. Cada projeto entregue me aproxima do <strong>intercâmbio em Dublin</strong>.</p>
+   <div class="hero-cta intro-up">
+    <a class="btn btn-copper" href="#projetos">Ver os 15 sites<span class="dot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></span></a>
+    <a class="btn btn-line" href="#historia">Minha história<span class="dot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+   </div>
+  </div>
+
+  <figure class="atlas intro-up" aria-label="Rota de São Sebastião, no Brasil, até Dublin, na Irlanda, com os 15 sites entregues marcados no caminho">
+   <div class="shell"><div class="core">
+    <div class="tele"><span><b>Rota atlântica</b>SSZ → DUB</span><span><b>9.367 km</b>em linha geodésica</span></div>
+    <div class="globe">
+     <img src="img/globe.svg" alt="" width="600" height="600" fetchpriority="high">
+     <svg viewBox="0 0 600 600" aria-hidden="true">
+      <defs><linearGradient id="g" gradientUnits="userSpaceOnUse" x1="230" y1="474.1" x2="369.2" y2="113.9"><stop offset="0" stop-color="#EDBB72"/><stop offset="1" stop-color="#34D399"/></linearGradient></defs>
+      <path d="M230,474.1L231.9,469L233.8,463.8L235.8,458.6L237.8,453.2L239.8,447.8L241.9,442.2L244.1,436.6L246.2,430.9L248.4,425.1L250.6,419.2L252.9,413.3L255.2,407.3L257.5,401.2L259.8,395.1L262.2,388.9L264.6,382.7L267,376.4L269.4,370L271.8,363.7L274.3,357.3L276.7,350.8L279.2,344.3L281.7,337.8L284.2,331.3L286.8,324.7L289.3,318.2L291.8,311.6L294.4,305L296.9,298.5L299.4,291.9L302,285.3L304.5,278.7L307.1,272.2L309.6,265.6L312.1,259.1L314.7,252.6L317.2,246.2L319.7,239.7L322.2,233.3L324.6,227L327.1,220.7L329.6,214.4L332,208.2L334.4,202L336.8,195.9L339.1,189.9L341.5,183.9L343.8,178L346.1,172.2L348.4,166.4L350.6,160.8L352.8,155.2L355,149.7L357.1,144.3L359.2,138.9L361.3,133.7L363.3,128.6L365.3,123.6L367.3,118.7L369.2,113.9" fill="none" stroke="#000" stroke-opacity=".35" stroke-width="3"/>
+      <path d="M230 474.1L230.7 472.1L231.4 470.1L232.1 468.1L232.9 466.1L233.7 463.9L234.5 461.8L235.3 459.6L236.1 457.3L237 455.1L237.8 452.7L238.7 450.3L239.6 447.9L240.5 445.5L241.5 442.9L242.4 440.4L243.4 437.8L244.4 435.2L245.4 432.5L246.4 429.7L247.4 427L248.5 424.2L249.6 421.3L250.6 418.4L251.7 415.5L252.9 412.5L254 409.5L255.2 406.4L256.3 403.4L257.5 400.2L258.7 397.1L259.9 393.9L261.1 390.7L262.4 387.4L263.6 384.1L264.9 380.8L266.2 377.4L267.4 374L268.7 370.6L270.1 367.2L271.4 363.7L272.7 360.2L274 356.7L275.4 353.2L276.8 349.6L278.1 346L279.5 342.4L280.9 338.8L282.3 335.2L283.7 331.5L285.1 327.9L286.5 324.2L287.9 320.5L289.3 316.8L290.8 313.1L292.2 309.4L293.6 305.7L295.1 302L296.5 298.3L297.9 294.5L299.4 290.8L300.8 287.1L302.2 283.4L303.7 279.7L305.1 276L306.5 272.3L308 268.6L309.4 264.9L310.8 261.3L312.2 257.6L313.7 254L315.1 250.4L316.5 246.8L317.9 243.2L319.3 239.6L320.6 236.1L322 232.6L323.4 229.1L324.7 225.6L326.1 222.2L327.4 218.7L328.7 215.4L330.1 212L331.4 208.7L332.7 205.4L333.9 202.1L335.2 198.9L336.5 195.7L337.7 192.6L338.9 189.4L340.2 186.4L341.4 183.3L342.6 180.3L343.7 177.3L344.9 174.4L346 171.5L347.2 168.7L348.3 165.9L349.4 163.1L350.5 160.4L351.5 157.7L352.6 155.1L353.6 152.5L354.6 150L355.6 147.5L356.6 145.1L357.5 142.7L358.5 140.3L359.4 138L360.3 135.7L361.2 133.5L362.1 131.4L363 129.2L363.8 127.2L364.6 125.1L365.4 123.1L366.2 121.2L367 119.3L367.8 117.4L368.5 115.6L369.2 113.9" fill="none" stroke="#CFE9E4" stroke-opacity=".5" stroke-width="1.4" stroke-dasharray="2 7" stroke-linecap="round"/>
+      <path id="arc" d="M230 474.1L230.7 472.1L231.4 470.1L232.1 468.1L232.9 466.1L233.7 463.9L234.5 461.8L235.3 459.6L236.1 457.3L237 455.1L237.8 452.7L238.7 450.3L239.6 447.9L240.5 445.5L241.5 442.9L242.4 440.4L243.4 437.8L244.4 435.2L245.4 432.5L246.4 429.7L247.4 427L248.5 424.2L249.6 421.3L250.6 418.4L251.7 415.5L252.9 412.5L254 409.5L255.2 406.4L256.3 403.4L257.5 400.2L258.7 397.1L259.9 393.9L261.1 390.7L262.4 387.4L263.6 384.1L264.9 380.8L266.2 377.4L267.4 374L268.7 370.6L270.1 367.2L271.4 363.7L272.7 360.2L274 356.7L275.4 353.2L276.8 349.6L278.1 346L279.5 342.4L280.9 338.8L282.3 335.2L283.7 331.5L285.1 327.9L286.5 324.2L287.9 320.5L289.3 316.8L290.8 313.1L292.2 309.4L293.6 305.7L295.1 302L296.5 298.3L297.9 294.5L299.4 290.8L300.8 287.1L302.2 283.4L303.7 279.7L305.1 276L306.5 272.3L308 268.6L309.4 264.9L310.8 261.3L312.2 257.6L313.7 254L315.1 250.4L316.5 246.8L317.9 243.2L319.3 239.6L320.6 236.1L322 232.6L323.4 229.1L324.7 225.6L326.1 222.2L327.4 218.7L328.7 215.4L330.1 212L331.4 208.7L332.7 205.4L333.9 202.1L335.2 198.9L336.5 195.7L337.7 192.6L338.9 189.4L340.2 186.4L341.4 183.3L342.6 180.3L343.7 177.3L344.9 174.4L346 171.5L347.2 168.7L348.3 165.9L349.4 163.1L350.5 160.4L351.5 157.7L352.6 155.1L353.6 152.5L354.6 150L355.6 147.5L356.6 145.1L357.5 142.7L358.5 140.3L359.4 138L360.3 135.7L361.2 133.5L362.1 131.4L363 129.2L363.8 127.2L364.6 125.1L365.4 123.1L366.2 121.2L367 119.3L367.8 117.4L368.5 115.6L369.2 113.9" fill="none" stroke="url(#g)" stroke-width="3.6" stroke-linecap="round"/>
+      <g id="marks"></g>
+      <circle class="pulse" cx="369.2" cy="113.9" r="9" fill="none" stroke="#6EE7B7" stroke-width="2"/>
+      <circle cx="369.2" cy="113.9" r="6.5" fill="#6EE7B7" stroke="#03231A" stroke-width="2"/>
+      <circle cx="230" cy="474.1" r="7" fill="#EDBB72" stroke="#241703" stroke-width="2"/>
+      <g id="plane"><circle r="15" fill="#03121F" stroke="#EDBB72" stroke-width="1.5"/><path transform="scale(.95)" d="M0-10 2.4-3 11 2v3L2.4 2.6 1.8 7 5 9.5V11L0 9.8-5 11V9.500L-1.8 7-2.400 2.600-11 5V2L-2.400-3Z" fill="#FBE2B8"/></g>
+     </svg>
+     <div class="tag dub" style="left:36.5%;top:5.3%"><b>Dublin, Irlanda</b>53°20'N · 06°15'W</div>
+     <div class="tag" style="left:31.7%;top:82.7%"><b>São Sebastião, SP</b>23°45'S · 45°24'W</div>
     </div>
-    <div class="sign rv" style="--d:4"><i></i><span>Feito por <b>Gustavo Antunes</b>, Litoral Norte de SP</span></div>
-   </div>
+    <div class="pass">
+     <div class="pass-main">
+      <div class="route-row">
+       <div class="code"><b>SSZ</b><small>São Sebastião</small></div>
+       <div class="fly" aria-hidden="true"><i></i><svg viewBox="-12 -12 24 24"><path d="M0-10 2.4-3 11 2v3L2.4 2.6 1.8 7 5 9.5V11L0 9.8-5 11V9.500L-1.8 7-2.400 2.600-11 5V2L-2.400-3Z"/></svg><i></i></div>
+       <div class="code"><b>DUB</b><small>Dublin</small></div>
+      </div>
+      <dl class="fields"><div><dt>Passageiro</dt><dd>Gustavo Antunes</dd></div><div><dt>Motivo da viagem</dt><dd>Intercâmbio</dd></div><div><dt>Na bagagem</dt><dd>15 sites no ar</dd></div></dl>
+     </div>
+     <div class="stub"><div class="bars" id="bars" aria-hidden="true"></div><small>1 faixa<br>por cliente</small></div>
+    </div>
+   </div></div>
+   <svg class="seal" viewBox="0 0 120 120" aria-hidden="true">
+    <circle cx="60" cy="60" r="58" fill="#0F7B55"/><circle cx="60" cy="60" r="51" fill="none" stroke="#EDBB72" stroke-width="1.2"/><circle cx="60" cy="60" r="34" fill="none" stroke="#EDBB72" stroke-width="1" stroke-dasharray="2 3"/>
+    <g class="spin"><path id="ring" d="M60 17.5a42.5 42.5 0 1 1-.1 0" fill="none"/><text font-family="DM Mono,monospace" font-size="9.2" fill="#FDEBC8" letter-spacing="1.5"><textPath href="#ring" textLength="262">INTERCÂMBIO · IRLANDA · OLC DIGITAL ·</textPath></text></g>
+    <g fill="#FDEBC8" transform="translate(60 56)"><path d="M0 0C-4-4-12-6-11-12c1-5 8-6 11-1 3-5 10-4 11 1 1 6-7 8-11 12z"/><path d="M0 0C-4-4-12-6-11-12c1-5 8-6 11-1 3-5 10-4 11 1 1 6-7 8-11 12z" transform="rotate(120)"/><path d="M0 0C-4-4-12-6-11-12c1-5 8-6 11-1 3-5 10-4 11 1 1 6-7 8-11 12z" transform="rotate(240)"/><path d="M1 2q2 12 9 18" fill="none" stroke="#FDEBC8" stroke-width="2.400" stroke-linecap="round"/></g>
+   </svg>
+  </figure>
+ </div>
+</section>
 
-   <div class="route rv" style="--d:2" aria-label="Rota de São Sebastião, SP, até Dublin, Irlanda. Cada site entregue é um ponto aceso no caminho.">
-    <svg class="map" viewBox="0 0 600 600" aria-hidden="true">
-     <defs>
-      <linearGradient id="trailGrad" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#F1E7D6"/><stop offset=".55" stop-color="#14A873"/><stop offset="1" stop-color="#D49B4B"/></linearGradient>
-      <radialGradient id="glowE" r=".5"><stop offset="0" stop-color="#14A873" stop-opacity=".55"/><stop offset="1" stop-color="#14A873" stop-opacity="0"/></radialGradient>
-      <radialGradient id="glowS" r=".5"><stop offset="0" stop-color="#2E7BC4" stop-opacity=".5"/><stop offset="1" stop-color="#2E7BC4" stop-opacity="0"/></radialGradient>
-     </defs>
-     <g class="grid-lines">
-      <line x1="0" y1="100" x2="600" y2="100"/><line x1="0" y1="200" x2="600" y2="200"/><line x1="0" y1="300" x2="600" y2="300"/><line x1="0" y1="400" x2="600" y2="400"/><line x1="0" y1="500" x2="600" y2="500"/>
-      <line x1="100" y1="0" x2="100" y2="600"/><line x1="200" y1="0" x2="200" y2="600"/><line x1="300" y1="0" x2="300" y2="600"/><line x1="400" y1="0" x2="400" y2="600"/><line x1="500" y1="0" x2="500" y2="600"/>
-     </g>
-     <circle cx="110" cy="470" r="90" fill="url(#glowS)"/>
-     <circle cx="490" cy="130" r="110" fill="url(#glowE)"/>
-     <!-- Litoral (abstrato) -->
-     <path d="M40 600C60 540 70 500 96 470s54-30 70-70 6-90 40-120" fill="none" stroke="rgba(241,231,214,.18)" stroke-width="1.5"/>
-     <!-- Irlanda (abstrata) -->
-     <path d="M470 86c18-8 40-4 50 10 8 12 4 30 10 44 6 16-6 34-26 38-18 4-36-2-46-14-12-14-14-34-8-50 4-12 8-22 20-28z" fill="rgba(20,168,115,.18)" stroke="rgba(20,168,115,.6)" stroke-width="1.5"/>
-     <path id="routePath" d="M110 470C170 360 250 330 320 300S450 230 490 130" fill="none" stroke="none"/>
-     <path class="trail" id="trail" d="M110 470C170 360 250 330 320 300S450 230 490 130"/>
-     <g id="wps"></g>
-     <circle class="pin-pulse" cx="490" cy="130" r="10" fill="none" stroke="#14A873" stroke-width="2"/>
-     <circle cx="490" cy="130" r="7" fill="#14A873"/>
-     <circle cx="110" cy="470" r="7" fill="#F1E7D6"/>
-     <g id="plane" class="plane"><path d="M0-9 3-2 12 2V5L3 3 2 9 5 11V13L0 11.5-5 13V11L-2 9-3 3-12 5V2L-3-2Z" fill="#D49B4B"/></g>
-    </svg>
-    <div class="miles"><b id="milesTxt">15 sites entregues</b><br>Cada um acende um ponto da rota.</div>
-    <div class="coord from"><b>São Sebastião, SP</b>23°45'S · 45°24'W</div>
-    <div class="coord to"><b>Dublin, Irlanda</b>53°20'N · 06°15'W</div>
-    <div class="stamp" aria-hidden="true"><div><span>Destino</span><strong>Dublin</strong><span>Intercâmbio</span></div></div>
+<section class="story" id="historia">
+ <div class="wrap">
+  <p class="manifest rise">Cresci vendo empresas incríveis do litoral perderem clientes todos os dias <span class="serif">só porque não apareciam bem na internet.</span></p>
+  <div class="chap">
+   <div class="chap-aside rise"><h2>De onde eu saí e para onde eu vou.</h2><p>A OLC Digital nasceu para resolver um problema que eu via de perto. Hoje ela também constrói o meu maior plano.</p></div>
+   <div class="line" id="line">
+    <i class="fill" aria-hidden="true"></i>
+    <article class="stop rise" style="--c:#EDBB72"><code>23°45'S 45°24'W</code><h3>São Sebastião, Litoral Norte de SP</h3><p>É a minha cidade. Foi aqui que aprendi como o turismo, o mar e os pequenos negócios funcionam de verdade.</p></article>
+    <article class="stop rise" style="--c:#7DD3FC"><code>OLC Digital</code><h3>Sites feitos para trazer reserva direta</h3><p>Turismo, náutica, aventura e bem-estar, com a identidade real de cada cliente e o WhatsApp a um toque.</p><ul><li>SEO Local no Google e no Maps</li><li>GEO para as IAs</li><li>Celular em primeiro lugar</li></ul></article>
+    <article class="stop rise" style="--c:#34D399"><code>53°20'N 06°15'W</code><h3>Intercâmbio em Dublin, Irlanda <svg class="flag" viewBox="0 0 3 2" aria-hidden="true"><path fill="#169B62" d="M0 0h1v2H0z"/><path fill="#fff" d="M1 0h1v2H1z"/><path fill="#FF883E" d="M2 0h1v2H2z"/></svg></h3><p>É o sonho que move cada entrega. Quero chegar lá com o meu próprio trabalho, ajudando negócios do Brasil a crescer no caminho.</p></article>
    </div>
   </div>
- </section>
+ </div>
+</section>
 
- <section class="about" id="sobre">
-  <div class="wrap">
-   <span class="eyebrow rv">Quem sou</span>
-   <h2 class="rv">Nasci no Litoral Norte. <span class="serif">Trabalho para atravessar o Atlântico.</span></h2>
-   <div class="chapters">
-    <article class="chapter c1 rv">
-     <span class="tag">01 · ORIGEM</span>
-     <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#0A2540" stroke-width="1.8" stroke-linecap="round"><path d="M2 16c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2 2.5 2 5 2"/><path d="M2 20c2.5 0 2.5-2 5-2s2.5 2 5 2 2.5-2 5-2 2.5 2 5 2"/><path d="M12 3v8M8 7l4-4 4 4"/></svg></div>
-     <h3>São Sebastião, SP</h3>
-     <p>Cresci vendo negócios incríveis do litoral perderem clientes por falta de presença digital.</p>
-    </article>
-    <article class="chapter c2 rv">
-     <span class="tag">02 · OFÍCIO</span>
-     <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#8a5a1c" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4M7 10l2 2-2 2M12 14h4"/></svg></div>
-     <h3>OLC Digital</h3>
-     <p>Turismo, náutica e bem-estar com site próprio, Google, Maps e IAs trazendo reservas.</p>
-    </article>
-    <article class="chapter c3 rv">
-     <span class="tag">03 · SONHO</span>
-     <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="#0F7B55" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 19h19"/><path d="M3 14.5l4.5 1.2 4-3.6L19 13c1.5.3 2.4-1.2 1.2-2.2L17 9l-9.5-.5-2 1.6L3 9.5z"/></svg></div>
-     <h3>Intercâmbio na Irlanda</h3>
-     <p>Cada site entregue é um passo a mais até Dublin, conquistado com o próprio trabalho.</p>
-    </article>
-   </div>
-   <div class="quote rv"><i></i><p>“Cada cliente que cresce me deixa mais perto da Irlanda.”</p></div>
+<section class="show" id="projetos" aria-roledescription="carrossel" aria-label="Sites entregues">
+ <div class="wrap head"><h2 class="rise">Os sites que <span class="serif">eu coloquei no ar.</span></h2><p class="rise">Telas reais, no computador e no celular. Toque numa marca, deslize ou use as setas.</p></div>
+ <div class="strip" id="strip" role="group" aria-label="Escolher cliente"></div>
+ <div class="stage" id="stage" tabindex="0" aria-label="Telas do site selecionado. Use as setas do teclado para trocar."></div>
+ <div class="wrap">
+  <div class="panel" id="panel">
+   <div class="id swap"><span class="av" id="pAv"><img id="pLogo" alt="" width="66" height="66"></span><div><h3 id="pName"></h3><p id="pMeta"></p></div></div>
+   <ul class="done swap" id="pDone" aria-label="O que foi entregue"></ul>
+   <a class="btn" id="pGo" target="_blank" rel="noopener">Visitar site ao vivo<span class="dot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
   </div>
- </section>
+  <div class="ctl">
+   <button class="arrow" id="prev" type="button" aria-label="Site anterior"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+   <button class="arrow" id="next" type="button" aria-label="Próximo site"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+   <div class="track" aria-hidden="true"><i id="prog"></i></div>
+   <p class="count" aria-live="polite"><b id="cur">01</b> / 15</p>
+  </div>
+ </div>
+</section>
 
- <section class="showcase" id="projetos">
-  <div class="wrap">
-   <div class="sec-head">
-    <div><span class="eyebrow rv">Projetos entregues</span><h2 class="rv">Sites no ar, <span class="serif">clientes reais.</span></h2></div>
-    <p class="rv">Arraste, deslize ou use as setas. Toque em “Abrir site ao vivo”.</p>
-   </div>
-   <div class="stage" id="stage" role="region" aria-roledescription="carrossel" aria-label="Sites entregues pela OLC Digital"></div>
-   <div class="controls">
-    <button class="arrow" id="prev" aria-label="Site anterior"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
-    <button class="arrow" id="next" aria-label="Próximo site"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
-    <div class="progress" aria-hidden="true"><i id="bar"></i></div>
-    <div class="counter" aria-live="polite"><b id="cur">01</b> / <span id="tot">15</span></div>
-   </div>
-  </div>
- </section>
+<section class="vit" id="vitrine">
+ <div class="wrap">
+  <div class="head"><h2 class="rise">Vitrine <span class="serif">dos 15 finalizados.</span></h2><p class="rise">Só projetos fechados e entregues. Escolha um nicho e abra qualquer site.</p></div>
+  <div class="filters" id="filters" role="group" aria-label="Filtrar por nicho"></div>
+  <div class="grid" id="grid"></div>
+ </div>
+</section>
 
- <section class="gallery" id="vitrine">
-  <div class="wrap">
-   <div class="sec-head">
-    <div><span class="eyebrow rv">Vitrine completa</span><h2 class="rv">Todos os sites <span class="serif">finalizados.</span></h2></div>
-    <p class="rv">Filtre por nicho e abra qualquer site em nova aba.</p>
-   </div>
-   <div class="filters" id="filters" role="group" aria-label="Filtrar por nicho"></div>
-   <div class="bento" id="bento"></div>
-  </div>
- </section>
-
- <section class="cta" id="contato">
-  <span class="ring" style="width:620px;height:620px;left:-220px;top:-260px"></span>
-  <span class="ring" style="width:420px;height:420px;right:-140px;bottom:-200px"></span>
-  <div class="wrap">
-   <span class="eyebrow rv">Próximo ponto da rota</span>
-   <h2 class="rv">Quer um site desse nível <span class="serif">para a sua empresa?</span></h2>
-   <p class="rv">Me chama no WhatsApp. Eu respondo pessoalmente.</p>
-   <a class="btn btn-gold rv" href="https://wa.me/5512988685845?text=Opa%20Gustavo!%20Vi%20o%20portf%C3%B3lio%20da%20OLC%20Digital%20e%20quero%20um%20site%20profissional%20para%20minha%20empresa." target="_blank" rel="noopener">Quero um site desse nível <span aria-hidden="true">↗</span></a>
-  </div>
- </section>
+<section class="cta" id="contato">
+ <svg class="arcs" viewBox="0 0 1300 420" fill="none" aria-hidden="true"><path d="M0 420C200 120 520 40 650 40s450 80 650 380" stroke="#A7F3D0" stroke-opacity=".35"/><path d="M110 420C290 190 520 120 650 120s360 70 540 300" stroke="#A7F3D0" stroke-opacity=".25"/><path d="M230 420C380 260 540 200 650 200s270 60 420 220" stroke="#FBE2B8" stroke-opacity=".4" stroke-dasharray="3 9"/></svg>
+ <div class="wrap">
+  <h2 class="rise">Sua empresa pode ser <span class="serif">o próximo marco da rota.</span></h2>
+  <p class="rise">Quero um site desse nível para o seu negócio. A conversa é direto comigo, no WhatsApp.</p>
+  <a class="btn btn-copper wa" target="_blank" rel="noopener">Falar com o Gustavo<span class="dot"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+ </div>
+</section>
 </main>
 
-<footer>
- <div class="wrap"><span><b>OLC Digital</b> · Gustavo Antunes · São Sebastião, SP → Dublin, IE</span><span>© <span id="ano">2026</span></span></div>
-</footer>
+<footer><div class="wrap"><span><b>OLC Digital</b> · Gustavo Antunes</span><span>São Sebastião, SP → Dublin, Irlanda · 2026</span></div></footer>
 
-<a class="wa-fab" id="waFab" href="https://wa.me/5512988685845?text=Opa%20Gustavo!%20Vi%20o%20portf%C3%B3lio%20da%20OLC%20Digital%20e%20quero%20um%20site%20profissional%20para%20minha%20empresa." target="_blank" rel="noopener" aria-label="Falar com o Gustavo no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.6 11.6 0 0 0 4.4 3.9c1.6.7 2.3.8 3.1.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg></a>
+<a class="fab wa off" id="fab" target="_blank" rel="noopener" aria-label="Falar com o Gustavo no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.100 5.100 0 0 0 1.1 2.7 11.600 11.600 0 0 0 4.4 3.9c1.600.7 2.3.8 3.1.6a2.700 2.700 0 0 0 1.8-1.200 2.200 2.200 0 0 0 .2-1.300c-.1-.1-.3-.2-.5-.3z"/></svg></a>
 
+<script src="js/gsap.min.js"></script>
+<script src="js/ScrollTrigger.min.js"></script>
 <script>
+(function(){
+'use strict';
+// id, nome, cidade, nicho, categoria, url, cor da marca, logo, [fundo, ajuste, tamanho], entregas
 const SITES=[
-{id:'evo',name:'Evo Care',city:'São Paulo · Ilhabela · Ibiza',niche:'Massoterapia & Home Care',cat:'saude',url:'https://graficoscripto-cmyk.github.io/evo-home-care/',color:'#2A3320',logo:'evo.svg',tags:['Lótus autoral em SVG','WhatsApp por região','Protocolos Evo']},
-{id:'refugio',name:'Lancha Refúgio Ilhabela',city:'Ilhabela, SP',niche:'Passeios de lancha privativos',cat:'nautico',url:'https://lancharefugio.com.br/',color:'#0A3E5E',logo:'refugio.webp',tags:['Domínio .com.br','Carta náutica interativa','SEO Local + GEO']},
-{id:'marevia',name:'Marevia Turismo',city:'Arraial do Cabo, RJ',niche:'Barco, lancha, quadriciclo & mergulho',cat:'nautico',url:'https://www.mareviaturismo.com.br/',color:'#12336A',logo:'marevia.webp',tags:['Google Meu Negócio','Search Console + IndexNow','Simulador completo']},
-{id:'bravamar',name:'Bravamar Ubatuba',city:'Ubatuba, SP',niche:'Passeios de lancha privativos',cat:'nautico',url:'https://bravamar-ubatuba.pages.dev/',color:'#0B3A5E',logo:'bravamar.webp',tags:['Lancha navegando no scroll','Reels reais','SEO + GEO']},
-{id:'edmundo',name:'Edmundo Diversões Náuticas',city:'Garopaba, SC',niche:'Parque náutico · 32 anos',cat:'nautico',url:'https://www.edmundodiversoesnauticas.com.br/',color:'#0A4560',logo:'edmundo.webp',tags:['Domínio .com.br','6 atrações','Google Meu Negócio']},
-{id:'mikhael',name:'Lancha Mikhael',city:'Paraty, RJ',niche:'Lancha privativa · 4 roteiros',cat:'nautico',url:'https://lanchamkparaty.com.br/',color:'#1B2C4F',logo:'mikhael.webp',tags:['Identidade do casco','Roteiros em abas','WebMCP + GEO']},
-{id:'mareazul',name:'Maré Azul Passeios',city:'Cabo Frio & Arraial do Cabo, RJ',niche:'Lancha, barco & jet ski',cat:'nautico',url:'https://mareazulpasseios.com.br/',color:'#0F2848',logo:'mareazul.webp',tags:['Domínio .com.br','22 serviços no Google','Combo lancha + jet ski']},
-{id:'puruca',name:'Barco Puruca',city:'São Sebastião, SP',niche:'Travessias para as ilhas',cat:'nautico',url:'https://barcopuruca.com.br/',color:'#0A2550',logo:'puruca.webp',tags:['Na minha cidade','Brasão vetorial','Regras de lotação']},
-{id:'aguasclaras',name:'Águas Claras Turismo',city:'Ubatuba, SP',niche:'Lancha · Roteiro Norte & Anchieta',cat:'nautico',url:'https://aguasclarasturismo.com.br/',color:'#0E2A7A',logo:'aguasclaras.webp',tags:['Domínio .com.br','Estética clean','Passeio ou festa a bordo']},
-{id:'manaus',name:'Passeio Turístico Manaus',city:'Manaus, AM',niche:'Expedições na Amazônia',cat:'aventura',url:'https://passeiosemmanaus.com.br/',color:'#0E4A40',logo:'manaus.svg',tags:['Domínio .com.br','Som da Amazônia','Passaporte de roteiros']},
-{id:'genezio',name:'Genézio Passeios de Barco',city:'Ubatuba, SP',niche:'Barco · Lagoinha & ilhas',cat:'nautico',url:'https://graficoscripto-cmyk.github.io/genezio-ubatuba/',color:'#0B3440',logo:'genezio.webp',tags:['Abertura com bússola','Carta batimétrica','WhatsApp direto']},
-{id:'gtrip',name:'G-TRIP Adventure',city:'Peruíbe, SP',niche:'Barco & ecoturismo · Juréia',cat:'aventura',url:'https://g-trip-adventure.vercel.app/',color:'#14507A',logo:'gtrip.webp',tags:['Rota animada 1-2-3','Bússola no scroll','Logo redesenhada']},
-{id:'mergulhojp',name:'Clube do Mergulho JP',city:'João Pessoa, PB',niche:'Mergulho, batismo & naufrágios',cat:'aventura',url:'https://clube-do-mergulho-joao-pessoa.vercel.app/',color:'#06324A',logo:'mergulhojp.webp',tags:['Página que mergulha','Profundímetro 0–20 m','Bolhas ao toque']},
-{id:'rvtour',name:'RV Tour Búzios',city:'Armação dos Búzios, RJ',niche:'Buggy · 8 praias & 3 mirantes',cat:'aventura',url:'https://rv-tour-buzios.vercel.app/',color:'#1A2470',logo:'rvtour.webp',tags:['Paleta da logo','Trilha das 8 praias','Agenda mobile-first']},
-{id:'kelli',name:'Kelli Roque Passeios',city:'Capitólio, MG',niche:'Lancha · Mar de Minas',cat:'nautico',url:'https://kelli-roque-capitolio.vercel.app/',color:'#0A1F3F',logo:'kelli.webp',tags:['Cânions & Lagoa Azul','Visual amplo','Reserva direta']}
-];
-const CATS=[['todos','Todos'],['nautico','Lanchas & Passeios Náuticos'],['saude','Saúde & Home Care'],['aventura','Mergulho & Aventura']];
-const WIDE=new Set(['evo','refugio','marevia']);
+['evo','Evo Care','São Paulo · Ilhabela · Ibiza','Massoterapia home care','saude','https://graficoscripto-cmyk.github.io/evo-home-care/','#9EAA7D','evo.svg',['#161A11','contain','86%'],['WhatsApp por região','Lótus autoral em SVG','Protocolos Evo']],
+['refugio','Lancha Refúgio Ilhabela','Ilhabela, SP','Lancha privativa','nautico','https://lancharefugio.com.br/','#F2A623','refugio.webp',['#06314E','contain','94%'],['Domínio .com.br','Carta náutica interativa','SEO Local + GEO']],
+['marevia','Marevia Turismo','Arraial do Cabo, RJ','Barco, quadriciclo e mergulho','nautico','https://www.mareviaturismo.com.br/','#22B8CF','marevia.webp',['#17366E','contain','92%'],['Domínio oficial','Google Meu Negócio','Search Console + IndexNow','Simulador']],
+['bravamar','Bravamar','Ubatuba, SP','Passeios de lancha','nautico','https://www.bravamarubatuba.com.br/','#F2B340','bravamar.webp',['#072B47','cover','104%'],['Lancha animada no scroll','Reels reais','Google Meu Negócio','SEO + GEO']],
+['edmundo','Edmundo Diversões Náuticas','Garopaba, SC','Parque náutico, 32 anos','nautico','https://www.edmundodiversoesnauticas.com.br/','#E8552D','edmundo.webp',['#07344A','contain','96%'],['Domínio .com.br','6 atrações','Google Meu Negócio','Search Console']],
+['mikhael','Lancha Mikhael','Paraty, RJ','Lancha, 4 roteiros','nautico','https://lanchamkparaty.com.br/','#34C89A','mikhael.webp',['#15233F','cover','100%'],['Domínio .com.br','Roteiros em abas','SEO Local + GEO','WebMCP']],
+['mareazul','Maré Azul Passeios','Cabo Frio e Arraial do Cabo, RJ','Lancha, barco e jet ski','nautico','https://mareazulpasseios.com.br/','#19C3DB','mareazul.webp',['#050E1C','cover','104%'],['Domínio .com.br','22 serviços no Google','Simulador lancha + jet ski']],
+['puruca','Barco Puruca','São Sebastião, SP','Travessias para As Ilhas','nautico','https://barcopuruca.com.br/','#4A90E2','puruca.webp',['#fff','cover','104%'],['Domínio .com.br','Brasão vetorial','4 roteiros em abas','Simulador com lotação']],
+['aguasclaras','Águas Claras Turismo','Ubatuba, SP','Lancha privativa','nautico','https://aguasclarasturismo.com.br/','#3D6BFF','aguasclaras.webp',['#fff','cover','102%'],['Domínio .com.br','Fotos reais em alta','Simulador de passeio ou festa']],
+['manaus','Passeio Turístico Manaus Completo','Manaus, AM','Expedições na Amazônia','aventura','https://passeiosemmanaus.com.br/','#E8869F','manaus.svg',['#0B3A33','cover','100%'],['Domínio .com.br','Som ambiente da Amazônia','Google Meu Negócio','Passaporte de roteiros']],
+['genezio','Genézio Passeios de Barco','Ubatuba, SP','Lagoinha e ilhas do Norte','nautico','https://graficoscripto-cmyk.github.io/genezio-ubatuba/','#F0B429','genezio.webp',['#06232B','cover','106%'],['Abertura com bússola','Carta batimétrica','Simulador WhatsApp']],
+['gtrip','G-TRIP Adventure','Peruíbe, SP','Barco e ecoturismo','aventura','https://g-trip-adventure.vercel.app/','#E4572E','gtrip.webp',['#fff','contain','90%'],['Rota náutica animada','Bússola no scroll','Logo redesenhada','Simulador']],
+['mergulhojp','Clube do Mergulho João Pessoa','João Pessoa, PB','Mergulho e naufrágios','aventura','https://clube-do-mergulho-joao-pessoa.vercel.app/','#1E9BE0','mergulhojp.webp',['#fff','cover','104%'],['A página mergulha','Profundímetro de 0 a 20 m','Bolhas ao toque']],
+['rvtour','RV Tour Búzios','Armação dos Búzios, RJ','Passeio de buggy','aventura','https://rv-tour-buzios.vercel.app/','#FFB800','rvtour.webp',['#fff','contain','84%'],['Paleta da logo em SVG','Trilha das 8 praias','Agendamento no celular']],
+['kelli','Kelli Roque Passeios','Capitólio, MG','Lancha no Mar de Minas','nautico','https://kelli-roque-capitolio.vercel.app/','#1FA9F4','kelli.webp',['#0A0620','cover','104%'],['Cânions e Lagoa Azul','Simulador de reserva','Celular em primeiro lugar']]
+].map(a=>({id:a[0],name:a[1],city:a[2],niche:a[3],cat:a[4],url:a[5],color:a[6],logo:a[7],lb:a[8],done:a[9]}));
+const N=SITES.length;
 const $=s=>document.querySelector(s);
-const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
-const host=u=>u.replace(/^https?:\/\//,'').replace(/\/$/,'');
-const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-$('#ano').textContent=new Date().getFullYear();
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+const host=u=>u.replace(/^https:\/\//,'').replace(/\/$/,'');
+const avStyle=s=>`--lbg:${s.lb[0]};--lf:${s.lb[1]};--lw:${s.lb[2]}`;
+const ext='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>';
+const WA='https://wa.me/5512988685845?text=Opa%20Gustavo!%20Vi%20o%20portf%C3%B3lio%20da%20OLC%20Digital%20e%20quero%20um%20site%20profissional%20para%20minha%20empresa.';
+document.querySelectorAll('.wa').forEach(a=>a.href=WA);
+$('#bars').innerHTML=SITES.map(s=>`<i style="--c:color-mix(in srgb,${s.color} 80%,#08192A)"></i>`).join('');
 
-/* Rota: 15 pontos acesos + avião */
-(function(){
- const path=$('#routePath'),trail=$('#trail'),L=path.getTotalLength(),g=$('#wps'),plane=$('#plane');
- trail.style.setProperty('--len',L);
- const n=SITES.length,span=.78,pts=[];
- for(let i=0;i<n;i++){const t=(i+1)/(n+1)*span/((n)/(n+1));const p=path.getPointAtLength(Math.min(t,span)*L);pts.push(p);
-  const c=document.createElementNS('http://www.w3.org/2000/svg','circle');c.setAttribute('cx',p.x);c.setAttribute('cy',p.y);c.setAttribute('r',4.2);c.setAttribute('fill',i%2?'#14A873':'#F1E7D6');c.setAttribute('class','wp');g.appendChild(c);}
- const fut=document.createElementNS('http://www.w3.org/2000/svg','path');
- const place=t=>{const a=path.getPointAtLength(t*L),b=path.getPointAtLength(Math.min(t*L+1,L));const ang=Math.atan2(b.y-a.y,b.x-a.x)*180/Math.PI+90;plane.setAttribute('transform',`translate(${a.x} ${a.y}) rotate(${ang}) scale(1.6)`)};
- const wps=[...g.children];
- if(RM){wps.forEach(w=>w.classList.add('on'));place(span);return}
- place(0);let start=null;const dur=3200,delay=500;
- function step(ts){if(!start)start=ts;let k=Math.min(Math.max((ts-start-delay)/dur,0),1);const e=1-Math.pow(1-k,3);const t=e*span;place(t);
-  wps.forEach((w,i)=>{if(!w.classList.contains('on')&&t>=(i+1)/(n+1)*span/((n)/(n+1))-0.001)w.classList.add('on')});
-  if(k<1)requestAnimationFrame(step);else{let f=0;(function idle(){f+=.012;place(span+Math.sin(f)*.006);requestAnimationFrame(idle)})()}}
- requestAnimationFrame(step);
-})();
+/* rota do globo */
+const arc=$('#arc'),L=arc.getTotalLength(),plane=$('#plane'),marks=$('#marks'),REACH=.8;
+const NS='http://www.w3.org/2000/svg';
+const stops=SITES.map((s,i)=>{const t=.05+(REACH-.12)*i/(N-1),p=arc.getPointAtLength(t*L),c=document.createElementNS(NS,'circle');c.setAttribute('cx',p.x);c.setAttribute('cy',p.y);c.setAttribute('r',4.6);c.setAttribute('fill',s.color);c.setAttribute('stroke','#fff');c.setAttribute('stroke-width','1.4');marks.appendChild(c);return{t,c}});
+arc.style.strokeDasharray=L;
+function fly(t){const a=arc.getPointAtLength(t*L),b=arc.getPointAtLength(Math.min(L,t*L+2)),z=arc.getPointAtLength(Math.max(0,t*L-2));const ang=Math.atan2(b.y-z.y,b.x-z.x)*180/Math.PI+90;plane.setAttribute('transform',`translate(${a.x} ${a.y}) rotate(${ang})`);arc.style.strokeDashoffset=L*(1-t);stops.forEach(s=>s.c.style.opacity=t>=s.t-.005?1:0)}
+fly(REACH);
 
-/* Carrossel coverflow com física */
-(function(){
- const stage=$('#stage'),n=SITES.length;
- stage.innerHTML=SITES.map((s,i)=>`<a class="slide" href="${s.url}" target="_blank" rel="noopener" data-i="${i}" style="--accent:${s.color}" aria-label="${esc(s.name)}, ${esc(s.city)}. Abrir site ao vivo">
-  <div class="frame"><div class="device"><div class="bar"><i></i><i></i><i></i><span>${esc(host(s.url))}</span></div><div class="screen"><img src="img/capas/${s.id}.webp" alt="Capa do site ${esc(s.name)}" width="1200" height="630" ${i<3?'':'loading="lazy"'} decoding="async" draggable="false"></div></div>
-  <div class="phone" aria-hidden="true"><img src="img/capas/${s.id}.webp" alt="" loading="lazy" decoding="async" draggable="false" style="object-position:${['evo','marevia','kelli'].includes(s.id)?'50%':'30%'} 50%"></div></div>
-  <div class="info"><span class="logo-tile"><img src="img/logos/${s.logo}" alt="Logo ${esc(s.name)}" width="60" height="60" loading="lazy" draggable="false"></span><div><h3>${esc(s.name)}</h3><div class="meta">${esc(s.city)} · ${esc(s.niche)}</div></div><span class="btn btn-gold go">Abrir site ao vivo ↗</span></div>
-  <div class="chips">${s.tags.map(t=>`<span>${esc(t)}</span>`).join('')}</div></a>`).join('');
- const slides=[...stage.children];
- $('#tot').textContent=String(n).padStart(2,'0');
- let pos=0,target=0,raf=0,sw=0,gap=0,mobile=false;
- function measure(){const w=stage.clientWidth;mobile=w<720;sw=mobile?Math.min(w-8,520):Math.min(760,w*.62);gap=mobile?sw*1.06:sw*.74;stage.style.setProperty('--sw',sw+'px');
-  if(mobile){const h=slides[0].offsetHeight;stage.style.height=(h+60)+'px'}else stage.style.height=''}
- function wrapD(i){let d=((i-pos)%n+n)%n;if(d>n/2)d-=n;return d}
- function render(){slides.forEach((el,i)=>{const d=wrapD(i),a=Math.abs(d);
-  const x=d*gap,rot=Math.max(-55,Math.min(55,-d*(mobile?18:30))),z=-a*(mobile?120:240),s=1-Math.min(a,3)*.04;
-  el.style.transform=`translate3d(${x}px,0,${z}px) rotateY(${rot}deg) scale(${s})`;
-  el.style.opacity=a>2.6?0:(1-Math.max(0,a-1.6));el.style.zIndex=100-Math.round(a*10);
-  const io=Math.max(0,1-a*2.2);el.querySelector('.info').style.opacity=io;el.querySelector('.chips').style.opacity=io;el.querySelector('.phone').style.opacity=Math.max(0,1-a*1.5);el.querySelector('.info').style.visibility=el.querySelector('.chips').style.visibility=io>0?'visible':'hidden';
-  el.style.pointerEvents=a>2.6?'none':'auto';if(a<3.2&&!el.dataset.ld){el.dataset.ld=1;el.querySelectorAll('img').forEach(im=>im.loading='eager')}el.tabIndex=a<.5?0:-1;el.setAttribute('aria-hidden',a<.5?'false':'true')});
-  const cur=((Math.round(pos)%n)+n)%n;$('#cur').textContent=String(cur+1).padStart(2,'0');$('#bar').style.transform=`scaleX(${(cur+1)/n})`}
- function loop(){const diff=target-pos;pos+=diff*(RM?1:.11);if(Math.abs(diff)<.0005)pos=target;render();raf=Math.abs(target-pos)>.0005?requestAnimationFrame(loop):0}
- const go=t=>{target=t;if(!raf)raf=requestAnimationFrame(loop)};
- $('#prev').onclick=()=>{go(Math.round(target)-1);hold()};
- $('#next').onclick=()=>{go(Math.round(target)+1);hold()};
- stage.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){go(Math.round(target)+1);hold()}if(e.key==='ArrowLeft'){go(Math.round(target)-1);hold()}});
- // arraste
- let down=false,sx=0,sy=0,sp=0,moved=false,lx=0,lt=0,v=0,axis=null;
- stage.addEventListener('pointerdown',e=>{if(e.button&&e.button!==0)return;down=true;moved=false;axis=null;sx=lx=e.clientX;sy=e.clientY;sp=pos;lt=performance.now();v=0;cancelAnimationFrame(raf);raf=0;target=pos});
- addEventListener('pointermove',e=>{if(!down)return;const dx=e.clientX-sx,dy=e.clientY-sy;
-  if(!axis&&(Math.abs(dx)>6||Math.abs(dy)>6))axis=Math.abs(dx)>Math.abs(dy)?'x':'y';
-  if(axis!=='x')return;moved=true;stage.classList.add('dragging');
-  const now=performance.now(),dt=Math.max(1,now-lt);v=.8*v+.2*((e.clientX-lx)/dt);lx=e.clientX;lt=now;
-  pos=sp-dx/gap;target=pos;render()});
- const end=()=>{if(!down)return;down=false;stage.classList.remove('dragging');if(moved){const vv=Math.max(-2.5,Math.min(2.5,v));const fl=Math.max(-2,Math.min(2,Math.round(-vv*260/gap)));go(Math.round(pos)+fl);hold()}};
- addEventListener('pointerup',end);addEventListener('pointercancel',end);
- stage.addEventListener('click',e=>{const a=e.target.closest('.slide');if(!a)return;if(moved){e.preventDefault();moved=false;return}
-  const i=+a.dataset.i,d=wrapD(i);if(Math.abs(d)>.5){e.preventDefault();go(target+Math.round(d));hold()}},true);
- stage.addEventListener('dragstart',e=>e.preventDefault());
- // autoplay
- let paused=RM,until=0,vis=false;const hold=()=>{until=Date.now()+9000};
- new IntersectionObserver(es=>{vis=es[0].isIntersecting},{threshold:.35}).observe(stage);
- stage.addEventListener('mouseenter',()=>paused=true);stage.addEventListener('mouseleave',()=>paused=RM);
- setInterval(()=>{if(!paused&&vis&&!down&&Date.now()>until&&!document.hidden)go(Math.round(target)+1)},4800);
- addEventListener('resize',()=>{measure();render()});
- measure();render();
- window.__carousel={go:i=>go(i),get pos(){return pos},get target(){return target}};
- slides[0].querySelector('img').addEventListener('load',()=>{measure();render()});
- addEventListener('load',()=>{measure();render()});
-})();
+/* abertura */
+const intro=$('#intro');let seen=false;try{seen=sessionStorage.getItem('olc-intro')==='1'}catch(e){}
+let started=false;
+function start(){
+ if(started)return;started=true;intro.classList.remove('show');try{sessionStorage.setItem('olc-intro','1')}catch(e){}
+ if(!window.gsap||reduce)return;
+ gsap.from('.intro-up',{y:28,opacity:0,duration:.9,ease:'power3.out',stagger:.07,clearProps:'transform,opacity'});
+ const o={t:0};fly(0);gsap.to(o,{t:REACH,duration:2.8,delay:.35,ease:'power2.inOut',onUpdate:()=>fly(o.t)});
+}
+if(!seen&&!reduce){intro.classList.add('show');const t=setTimeout(start,1350);const skip=()=>{clearTimeout(t);start()};intro.addEventListener('click',skip);addEventListener('keydown',skip,{once:true})}else start();
 
-/* Vitrine com filtro */
-(function(){
- let cat='todos';const f=$('#filters'),b=$('#bento');
- function draw(){f.innerHTML=CATS.map(([k,l])=>`<button class="filter" data-c="${k}" aria-pressed="${k===cat}">${l}<em>${k==='todos'?SITES.length:SITES.filter(s=>s.cat===k).length}</em></button>`).join('');
-  const list=SITES.filter(s=>cat==='todos'||s.cat===cat);
-  b.innerHTML=list.map((s,i)=>`<a class="card ${cat==='todos'&&WIDE.has(s.id)?'wide':''}" style="--i:${i};--accent:${s.color}" href="${s.url}" target="_blank" rel="noopener">
-   <div class="pic"><img src="img/capas/${s.id}.webp" alt="Capa do site ${esc(s.name)}" width="1200" height="630" loading="lazy" decoding="async"><span class="niche">${esc(CATS.find(c=>c[0]===s.cat)[1])}</span></div>
-   <div class="body"><span class="logo-tile"><img src="img/logos/${s.logo}" alt="Logo ${esc(s.name)}" width="48" height="48" loading="lazy"></span><div><h3>${esc(s.name)}</h3><div class="meta">${esc(s.city)}</div></div><span class="ext" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8"/></svg></span></div></a>`).join('')}
- f.addEventListener('click',e=>{const x=e.target.closest('[data-c]');if(x){cat=x.dataset.c;draw()}});draw();
-})();
+/* carrossel */
+const stage=$('#stage'),strip=$('#strip'),show=$('#projetos'),panel=$('#panel');
+stage.innerHTML=SITES.map((s,i)=>`<div class="slide" data-i="${i}" style="--brand:${s.color}">
+<div class="par-mac"><div class="mac"><div class="mac-core"><div class="chrome"><i></i><i></i><i></i><a class="url" href="${s.url}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 11h12v9H6zM9 11V8a3 3 0 0 1 6 0v3"/></svg><span>${esc(host(s.url))}</span></a></div>
+<a class="shot" href="${s.url}" target="_blank" rel="noopener" draggable="false" aria-label="Abrir ${esc(s.name)} ao vivo"><img data-src="img/screens/${s.id}-desktop.webp" data-set="img/screens/${s.id}-desktop-sm.webp 720w, img/screens/${s.id}-desktop.webp 1440w" alt="Tela real do site ${esc(s.name)} no computador" width="1440" height="900" decoding="async" draggable="false"></a></div></div></div>
+<div class="cel"><span class="cel-in"><img data-src="img/screens/${s.id}-mobile.webp" alt="Tela real do site ${esc(s.name)} no celular" width="585" height="1266" decoding="async" draggable="false"></span></div></div>`).join('');
+const slides=[...stage.children];
+strip.innerHTML=SITES.map((s,i)=>`<button type="button" class="pill" data-i="${i}"><span class="av" style="${avStyle(s)}"><img src="img/logos/${s.logo}" alt="" width="42" height="42" loading="lazy"></span>${esc(s.name)}</button>`).join('');
+const pills=[...strip.children];
+let pos=0,target=0,raf=0,active=-1,near=false,swapT=0;
+const mod=n=>((n%N)+N)%N;
+const dist=i=>{let d=mod(i-pos);return d>N/2?d-N:d};
+function load(el){if(el.dataset.ld||!near)return;el.dataset.ld=1;el.querySelectorAll('img[data-src]').forEach(im=>{if(im.dataset.set){im.sizes='(max-width:720px) 100vw, 900px';im.srcset=im.dataset.set}im.src=im.dataset.src})}
+function paint(){
+ const dw=slides[0].offsetWidth,mobile=innerWidth<=720;
+ slides.forEach((el,i)=>{const d=dist(i),a=Math.abs(d),vis=a<1.6;
+  el.style.visibility=vis?'visible':'hidden';
+  if(a<2.2)load(el);
+  if(!vis)return;
+  const x=d*dw*(mobile?1.02:.86),sc=1-Math.min(a,1.5)*(mobile?.14:.24),ry=Math.max(-1,Math.min(1,d))*-24;
+  el.style.transform=`translate3d(${x}px,${Math.min(a,1)*34}px,0) perspective(1600px) rotateY(${ry}deg) scale(${sc})`;
+  el.style.opacity=a<=1?1-a*.68:Math.max(0,.32*(1-(a-1)/.6));
+  el.style.zIndex=50-Math.round(a*10);
+  el.querySelector('.cel').style.opacity=Math.max(0,1-a*2);
+  el.classList.toggle('on',a<.35);
+  el.inert=a>=.35;
+ });
+ const c=mod(Math.round(pos));if(c!==active)select(c);
+}
+function fillPanel(s){
+ $('#pName').textContent=s.name;$('#pMeta').textContent=`${s.city} · ${s.niche}`;
+ const av=$('#pAv');av.style.cssText=avStyle(s);const l=$('#pLogo');l.src='img/logos/'+s.logo;l.alt='Logo '+s.name;
+ $('#pDone').innerHTML=s.done.map(d=>`<li>${esc(d)}</li>`).join('');
+ $('#pGo').href=s.url;
+}
+function select(c){
+ const first=active<0;active=c;const s=SITES[c];
+ show.style.setProperty('--active',s.color);
+ pills.forEach((p,i)=>p.setAttribute('aria-current',i===c));
+ const p=pills[c];strip.scrollTo({left:p.offsetLeft-(strip.clientWidth-p.offsetWidth)/2,behavior:first||reduce?'auto':'smooth'});
+ $('#cur').textContent=String(c+1).padStart(2,'0');$('#prog').style.transform=`scaleX(${(c+1)/N})`;
+ clearTimeout(swapT);
+ if(first||reduce){fillPanel(s);return}
+ panel.classList.add('swapping');swapT=setTimeout(()=>{fillPanel(s);panel.classList.remove('swapping')},170);
+}
+let last=0;
+function tick(ts){const dt=Math.min(50,ts-(last||ts-16));last=ts;pos+=(target-pos)*(reduce?1:1-Math.pow(.0000045,dt/1000));if(Math.abs(target-pos)<.001)pos=target;paint();raf=pos!==target?requestAnimationFrame(tick):0}
+function go(t){target=t;last=0;if(!raf)raf=requestAnimationFrame(tick)}
+const step=n=>go(Math.round(target)+n);
+let holdUntil=0;const hold=()=>holdUntil=Date.now()+12000;
+$('#prev').addEventListener('click',()=>{hold();step(-1)});
+$('#next').addEventListener('click',()=>{hold();step(1)});
+strip.addEventListener('click',e=>{const b=e.target.closest('.pill');if(!b)return;hold();let d=mod(+b.dataset.i-mod(Math.round(target)));if(d>N/2)d-=N;const to=Math.round(target)+d;if(Math.abs(d)>2){pos=to-Math.sign(d)*2}go(to)});
+stage.addEventListener('keydown',e=>{if(e.key==='ArrowRight'){hold();step(1)}else if(e.key==='ArrowLeft'){hold();step(-1)}});
+let drag=null,blockClick=false;
+stage.addEventListener('pointerdown',e=>{if(e.button)return;blockClick=false;drag={x:e.clientX,y:e.clientY,p:pos,axis:null,lx:e.clientX,lt:e.timeStamp,v:0,id:e.pointerId}});
+stage.addEventListener('pointermove',e=>{
+ if(!drag){if(e.pointerType==='mouse'&&!reduce)parallax(e);return}
+ const dx=e.clientX-drag.x,dy=e.clientY-drag.y;
+ if(!drag.axis){if(Math.hypot(dx,dy)<7)return;drag.axis=Math.abs(dx)>Math.abs(dy)?'x':'y';if(drag.axis==='x'){try{stage.setPointerCapture(drag.id)}catch(_){}stage.classList.add('drag');cancelAnimationFrame(raf);raf=0;hold()}}
+ if(drag.axis!=='x')return;
+ const dt=Math.max(1,e.timeStamp-drag.lt);drag.v=drag.v*.6+(e.clientX-drag.lx)/dt*.4;drag.lx=e.clientX;drag.lt=e.timeStamp;
+ pos=drag.p-dx/(slides[0].offsetWidth*.86);target=pos;paint();
+});
+function release(){if(!drag)return;const d=drag;drag=null;stage.classList.remove('drag');if(d.axis!=='x')return;blockClick=true;
+ const base=Math.round(d.p);let to=Math.round(pos-Math.max(-1,Math.min(1,d.v*.55)));if(to===base&&Math.abs(pos-d.p)>.14)to=base+Math.sign(pos-d.p);go(Math.max(base-2,Math.min(base+2,to)))}
+stage.addEventListener('pointerup',release);stage.addEventListener('pointercancel',release);
+stage.addEventListener('click',e=>{if(blockClick){e.preventDefault();blockClick=false;return}const s=e.target.closest('.slide');if(s&&!s.classList.contains('on')){e.preventDefault();hold();let d=mod(+s.dataset.i-mod(Math.round(target)));if(d>N/2)d-=N;step(d)}},true);
+/* slides laterais continuam clicáveis para trazer ao centro */
+stage.addEventListener('pointerup',e=>{if(blockClick)return;const r=stage.getBoundingClientRect(),x=e.clientX-r.left,half=slides[0].offsetWidth/2,mid=r.width/2;if(e.target===stage){if(x<mid-half){hold();step(-1)}else if(x>mid+half){hold();step(1)}}});
+function parallax(e){const r=stage.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;const s=slides[mod(Math.round(pos))];s.querySelector('.cel').style.translate=`${x*-26}px ${y*-20}px`;s.querySelector('.par-mac').style.translate=`${x*10}px ${y*7}px`}
+stage.addEventListener('pointerleave',()=>slides.forEach(s=>{s.querySelector('.cel').style.translate='';s.querySelector('.par-mac').style.translate=''}));
+slides.forEach(s=>{s.querySelector('.cel').style.transition=s.querySelector('.par-mac').style.transition='translate .5s cubic-bezier(.22,1,.36,1)'});
+let inView=false,hover=false;
+new IntersectionObserver(es=>{if(es[0].isIntersecting){near=true;paint()}},{rootMargin:'900px 0px'}).observe(show);
+new IntersectionObserver(es=>inView=es[0].isIntersecting,{threshold:.5}).observe(stage);
+show.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse')hover=true});show.addEventListener('pointerleave',()=>hover=false);
+show.addEventListener('focusin',hold);
+if(!reduce)setInterval(()=>{if(inView&&!hover&&!drag&&!document.hidden&&Date.now()>holdUntil)step(1)},5200);
+addEventListener('resize',paint);
+paint();
 
-/* Reveal, nav auto-hide, bolinha */
-(function(){
- const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12,rootMargin:'0px 0px -6% 0px'});
- document.querySelectorAll('.rv').forEach(el=>io.observe(el));
- const nav=$('#nav'),fab=$('#waFab');let ly=scrollY,tk=false;
- addEventListener('scroll',()=>{if(tk)return;tk=true;requestAnimationFrame(()=>{const y=scrollY;nav.classList.toggle('hide',y>ly&&y>140);ly=y;fab.classList.toggle('on',y>innerHeight*.7&&y<document.body.scrollHeight-innerHeight*1.6);tk=false})},{passive:true});
+/* vitrine */
+const CATS=[['todos','Todos'],['nautico','Lanchas e passeios náuticos'],['saude','Saúde e home care'],['aventura','Mergulho e aventura']];
+const PATTERN=[[7,470],[5,470],[4,320],[4,320],[4,320],[5,470],[7,470],[4,320],[4,320],[4,320],[7,470],[5,470],[4,320],[4,320],[4,320]];
+let cat='todos';const filters=$('#filters'),grid=$('#grid');
+filters.innerHTML=CATS.map(([k,l])=>`<button type="button" class="chipf" data-c="${k}" aria-pressed="${k===cat}">${l}<span>${k==='todos'?N:SITES.filter(s=>s.cat===k).length}</span></button>`).join('');
+function draw(){
+ const list=SITES.filter(s=>cat==='todos'||s.cat===cat);
+ grid.innerHTML=list.map((s,i)=>{let span=6,h=430,solo=false;if(cat==='todos'){[span,h]=PATTERN[i]}else if(list.length%2&&i===list.length-1){span=12;h=520;solo=true}
+ return `<article class="work${solo?' solo':''}" style="--span:${span};--h:${h}px;--brand:${s.color}">
+<a class="work-shell" href="${s.url}" target="_blank" rel="noopener" aria-label="Abrir o site ${esc(s.name)} ao vivo"><span class="work-stage"><span class="w-mac"><img src="img/screens/${s.id}-desktop-sm.webp" ${span>6?`srcset="img/screens/${s.id}-desktop-sm.webp 720w, img/screens/${s.id}-desktop.webp 1440w" sizes="(max-width:720px) 90vw, 700px"`:''} alt="Site ${esc(s.name)} no computador" width="720" height="450" loading="lazy" decoding="async"></span><span class="w-cel"><img src="img/screens/${s.id}-mobile.webp" alt="Site ${esc(s.name)} no celular" width="585" height="1266" loading="lazy" decoding="async"></span></span></a>
+<div class="w-info"><span class="av" style="${avStyle(s)}"><img src="img/logos/${s.logo}" alt="Logo ${esc(s.name)}" width="52" height="52" loading="lazy"></span><div><h3>${esc(s.name)}</h3><p>${esc(s.city)}</p></div><a class="w-go" href="${s.url}" target="_blank" rel="noopener" aria-label="Abrir ${esc(s.name)}">${ext}</a></div>
+<ul class="w-tags">${s.done.slice(0,3).map(d=>`<li>${esc(d)}</li>`).join('')}</ul></article>`}).join('');
+}
+draw();
+/* altura do palco proporcional à coluna */
+filters.addEventListener('click',e=>{const b=e.target.closest('[data-c]');if(!b||b.dataset.c===cat)return;cat=b.dataset.c;filters.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b));draw();if(window.gsap&&!reduce){gsap.from(grid.children,{y:22,opacity:0,duration:.55,ease:'power3.out',stagger:.045,clearProps:'transform,opacity'})}if(window.ScrollTrigger)ScrollTrigger.refresh()});
+
+/* bolinha: some no topo, no carrossel e no fechamento */
+const fab=$('#fab'),block=new Set();
+const fio=new IntersectionObserver(es=>{es.forEach(e=>e.isIntersecting?block.add(e.target):block.delete(e.target));fab.classList.toggle('off',block.size>0)},{rootMargin:'-15% 0px -15% 0px'});
+['#hero','#projetos','#contato'].forEach(s=>fio.observe($(s)));
+
+/* movimento ligado ao scroll */
+if(window.gsap&&window.ScrollTrigger){
+ gsap.registerPlugin(ScrollTrigger);
+ const nav=$('#nav');
+ ScrollTrigger.create({start:0,end:'max',onUpdate:st=>nav.classList.toggle('hide',st.direction===1&&st.scroll()>160)});
+ if(!reduce){
+  const rio=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting&&e.boundingClientRect.top>0)return;rio.unobserve(e.target);gsap.to(e.target,{y:0,opacity:1,duration:.9,ease:'power3.out',clearProps:'transform,opacity'})}),{rootMargin:'0px 0px -4% 0px'});
+  document.querySelectorAll('.rise').forEach(el=>{if(el.getBoundingClientRect().top<innerHeight)return;gsap.set(el,{y:34,opacity:0});rio.observe(el)});
+  if(document.fonts)document.fonts.ready.then(()=>ScrollTrigger.refresh());
+  let rt;new ResizeObserver(()=>{clearTimeout(rt);rt=setTimeout(()=>ScrollTrigger.refresh(),250)}).observe(document.querySelector('main'));
+  gsap.fromTo('#line .fill',{scaleY:0},{scaleY:1,ease:'none',scrollTrigger:{trigger:'#line',start:'top 72%',end:'bottom 62%',scrub:.5}});
+  gsap.to('.globe',{y:36,ease:'none',scrollTrigger:{trigger:'#hero',start:'top top',end:'bottom top',scrub:.5}});
+ }
+}
 })();
 </script>
 </body>
