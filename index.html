@@ -208,7 +208,8 @@ footer b{color:var(--sand)}
  .stage{height:auto;min-height:540px}
  .info{flex-wrap:wrap}
  .info .go{margin-left:0;width:100%}
- .phone{width:26%;right:-8px;bottom:-18px}
+ .phone{width:19%;right:-6px;bottom:-14px;border-radius:16px;padding:4px}.phone img{border-radius:12px}
+ .controls{padding-right:66px;gap:12px}
  .cta{padding:96px 0}
 }
 @media (max-width:400px){.wrap{width:calc(100% - 32px)}.brand small{display:none}.hero h1{font-size:42px}}
@@ -413,7 +414,7 @@ $('#ano').textContent=new Date().getFullYear();
   el.style.transform=`translate3d(${x}px,0,${z}px) rotateY(${rot}deg) scale(${s})`;
   el.style.opacity=a>2.6?0:(1-Math.max(0,a-1.6));el.style.zIndex=100-Math.round(a*10);
   const io=Math.max(0,1-a*2.2);el.querySelector('.info').style.opacity=io;el.querySelector('.chips').style.opacity=io;el.querySelector('.phone').style.opacity=Math.max(0,1-a*1.5);el.querySelector('.info').style.visibility=el.querySelector('.chips').style.visibility=io>0?'visible':'hidden';
-  el.style.pointerEvents=a>2.6?'none':'auto';el.tabIndex=a<.5?0:-1;el.setAttribute('aria-hidden',a<.5?'false':'true')});
+  el.style.pointerEvents=a>2.6?'none':'auto';if(a<3.2&&!el.dataset.ld){el.dataset.ld=1;el.querySelectorAll('img').forEach(im=>im.loading='eager')}el.tabIndex=a<.5?0:-1;el.setAttribute('aria-hidden',a<.5?'false':'true')});
   const cur=((Math.round(pos)%n)+n)%n;$('#cur').textContent=String(cur+1).padStart(2,'0');$('#bar').style.transform=`scaleX(${(cur+1)/n})`}
  function loop(){const diff=target-pos;pos+=diff*(RM?1:.11);if(Math.abs(diff)<.0005)pos=target;render();raf=Math.abs(target-pos)>.0005?requestAnimationFrame(loop):0}
  const go=t=>{target=t;if(!raf)raf=requestAnimationFrame(loop)};
