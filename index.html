@@ -105,44 +105,43 @@ h1 span i{display:inline;font-style:normal}
 @media (min-width:2000px){.splide__slide{height:760px}}
 
 /* ---------- design exclusivo de vitrine para cada card ---------- */
-.card{position:relative;display:flex;flex-direction:column;justify-content:space-between;width:100%;height:100%;overflow:hidden;background:radial-gradient(110% 90% at 80% 12%,var(--c2),var(--c1) 68%,#040d1a 100%);color:#fff;cursor:pointer;user-select:none;-webkit-user-select:none;isolation:isolate;transition:transform .5s var(--ease)}
-.card::before{content:"";position:absolute;inset:0;z-index:0;background:radial-gradient(55% 45% at 50% 44%,color-mix(in srgb,var(--badge) 26%,transparent),transparent 72%);pointer-events:none}
-.card__mesh{position:absolute;inset:0;z-index:0;opacity:.16;pointer-events:none;background-image:radial-gradient(rgba(255,255,255,.32) 1px,transparent 1px);background-size:18px 18px}
-.card[data-pat="waves"] .card__mesh{background-image:repeating-radial-gradient(circle at 100% 0,transparent 0 18px,rgba(255,255,255,.11) 18px 19px);background-size:100% 100%;opacity:.35}
-.card[data-pat="grid"] .card__mesh{background-image:linear-gradient(rgba(255,255,255,.1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.1) 1px,transparent 1px);background-size:28px 28px;opacity:.28}
-.card[data-pat="rings"] .card__mesh{background-image:repeating-radial-gradient(circle at 50% 45%,transparent 0 24px,rgba(255,255,255,.12) 24px 25px);background-size:100% 100%;opacity:.32}
+.card{position:relative;display:flex;flex-direction:column;justify-content:space-between;width:100%;height:100%;overflow:hidden;contain:layout paint;background:radial-gradient(110% 90% at 80% 12%,var(--c2),var(--c1) 68%,#040d1a 100%);color:#fff;cursor:pointer;user-select:none;-webkit-user-select:none;isolation:isolate}
+.card::before{content:"";position:absolute;inset:0;z-index:0;background:radial-gradient(55% 45% at 50% 44%,color-mix(in srgb,var(--badge) 22%,transparent),transparent 72%);pointer-events:none}
+.card__mesh{position:absolute;inset:0;z-index:0;opacity:.14;pointer-events:none;background-image:radial-gradient(rgba(255,255,255,.3) 1px,transparent 1px);background-size:20px 20px}
+.card[data-pat="waves"] .card__mesh{background-image:repeating-radial-gradient(circle at 100% 0,transparent 0 20px,rgba(255,255,255,.1) 20px 21px);background-size:100% 100%;opacity:.28}
+.card[data-pat="grid"] .card__mesh{background-image:linear-gradient(rgba(255,255,255,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.09) 1px,transparent 1px);background-size:30px 30px;opacity:.24}
+.card[data-pat="rings"] .card__mesh{background-image:repeating-radial-gradient(circle at 50% 45%,transparent 0 26px,rgba(255,255,255,.1) 26px 27px);background-size:100% 100%;opacity:.26}
 
 /* topo do card (abaixo da curva superior) */
 .card__top{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:.6em;padding:2.55em 1.35em 0}
-.card__pill{display:inline-flex;align-items:center;gap:.45em;padding:.34em .8em;border-radius:99px;background:rgba(255,255,255,.11);box-shadow:inset 0 0 0 1px rgba(255,255,255,.2);backdrop-filter:blur(8px);font:500 .72em/1 'Poppins',sans-serif;letter-spacing:.03em;color:#fff;white-space:nowrap}
-.card__pill i{width:7px;height:7px;border-radius:50%;background:var(--badge);box-shadow:0 0 8px var(--badge)}
-.card__host{font:400 .68em/1 'Poppins',sans-serif;color:rgba(255,255,255,.76);padding:.34em .72em;border-radius:99px;background:rgba(4,13,26,.45);box-shadow:inset 0 0 0 1px rgba(255,255,255,.12);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:56%}
+.card__pill{display:inline-flex;align-items:center;gap:.45em;padding:.34em .8em;border-radius:99px;background:rgba(6,21,40,.72);box-shadow:inset 0 0 0 1px rgba(255,255,255,.2);font:500 .72em/1 'Poppins',sans-serif;letter-spacing:.03em;color:#fff;white-space:nowrap}
+.card__pill i{width:7px;height:7px;border-radius:50%;background:var(--badge)}
+.card__host{font:400 .68em/1 'Poppins',sans-serif;color:rgba(255,255,255,.8);padding:.34em .72em;border-radius:99px;background:rgba(4,13,26,.65);box-shadow:inset 0 0 0 1px rgba(255,255,255,.12);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:56%}
 
 /* palco central sob medida: Desktop 16:10 + Celular iPhone enquadrados sem cortar texto */
 .card__stage{position:relative;z-index:2;flex:1;min-height:0;display:flex;align-items:center;justify-content:center;padding:.8em 1.25em .4em}
 .mock-wrap{position:relative;width:92%;max-width:25em;aspect-ratio:16/10.5;display:flex;align-items:center;justify-content:center}
-.mock-mac{position:relative;width:90%;aspect-ratio:16/10;border-radius:.75em;overflow:hidden;background:#071322;box-shadow:0 1.4em 2.8em -0.8em rgba(0,0,0,.72),0 0 0 1px rgba(255,255,255,.22),0 0 2.4em -0.6em color-mix(in srgb,var(--badge) 45%,transparent);transition:transform .7s var(--ease)}
-.mock-bar{display:flex;align-items:center;gap:4px;height:1.15em;min-height:14px;padding:0 .55em;background:rgba(8,20,36,.95);border-bottom:1px solid rgba(255,255,255,.1)}
+.mock-mac{position:relative;width:90%;aspect-ratio:16/10;border-radius:.75em;overflow:hidden;background:#071322;box-shadow:0 14px 28px -8px rgba(0,0,0,.65),0 0 0 1px rgba(255,255,255,.2);transition:transform .45s var(--ease)}
+.mock-bar{display:flex;align-items:center;gap:4px;height:1.15em;min-height:14px;padding:0 .55em;background:#081424;border-bottom:1px solid rgba(255,255,255,.1)}
 .mock-bar i{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.28)}
 .mock-bar i:first-child{background:#ff5f56}.mock-bar i:nth-child(2){background:#ffbd2e}.mock-bar i:nth-child(3){background:#27c93f}
 .mock-bar span{margin-left:auto;font:500 .52em/1 'Poppins',sans-serif;color:var(--badge);letter-spacing:.04em;text-transform:uppercase}
 .mock-screen{position:relative;width:100%;height:calc(100% - 1.15em);overflow:hidden;background:#040d18}
-.mock-screen img{width:100%;height:100%;object-fit:cover;object-position:50% 0%;transition:transform .9s var(--ease)}
-.mock-phone{position:absolute;right:-2%;bottom:-6%;width:31%;aspect-ratio:390/844;padding:3px;border-radius:.7em;background:linear-gradient(155deg,rgba(255,255,255,.45),rgba(10,20,35,.95) 35%,#050c16);box-shadow:0 1em 2.2em -.4em rgba(0,0,0,.8),0 0 0 1px rgba(255,255,255,.22);transition:transform .7s var(--ease)}
+.mock-screen img{width:100%;height:100%;object-fit:cover;object-position:50% 0%}
+.mock-phone{position:absolute;right:-2%;bottom:-6%;width:31%;aspect-ratio:390/844;padding:3px;border-radius:.7em;background:#091526;box-shadow:0 12px 24px -6px rgba(0,0,0,.72),0 0 0 1px rgba(255,255,255,.22);transition:transform .45s var(--ease)}
 .mock-phone-in{width:100%;height:100%;border-radius:.55em;overflow:hidden;background:#040d18}
 .mock-phone-in img{width:100%;height:100%;object-fit:cover;object-position:50% 0%}
 
 /* variações de composição por site para cada card ter personalidade própria */
-.card[data-lay="left"] .mock-mac{margin-left:6%;transform:rotate(1deg)}
-.card[data-lay="left"] .mock-phone{right:auto;left:-2%;transform:rotate(-3.5deg)}
-.card[data-lay="right"] .mock-mac{margin-right:6%;transform:rotate(-1deg)}
-.card[data-lay="right"] .mock-phone{right:-2%;transform:rotate(3.5deg)}
-.card[data-lay="tilt"] .mock-mac{transform:perspective(800px) rotateY(-5deg) rotateX(2deg)}
-.card[data-lay="tilt"] .mock-phone{right:-1%;bottom:-5%;transform:rotate(4deg)}
+.card[data-lay="left"] .mock-mac{margin-left:6%;transform:rotate(.8deg)}
+.card[data-lay="left"] .mock-phone{right:auto;left:-2%;transform:rotate(-2.5deg)}
+.card[data-lay="right"] .mock-mac{margin-right:6%;transform:rotate(-.8deg)}
+.card[data-lay="right"] .mock-phone{right:-2%;transform:rotate(2.5deg)}
+.card[data-lay="tilt"] .mock-mac{transform:rotate(-1.2deg)}
+.card[data-lay="tilt"] .mock-phone{right:-1%;bottom:-5%;transform:rotate(3deg)}
 
-.splide__slide:hover .mock-mac{transform:translateY(-.35em) scale(1.025)}
-.splide__slide:hover .mock-phone{transform:translateY(-.6em) scale(1.05)}
-.splide__slide:hover .mock-screen img{transform:scale(1.04)}
+.splide__slide:hover .mock-mac{transform:translateY(-.25em)}
+.splide__slide:hover .mock-phone{transform:translateY(-.4em)}
 
 /* rodapé do card (acima da curva inferior) */
 .card__info{position:relative;z-index:2;display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:.85em;padding:.9em 1.35em 2.7em;background:linear-gradient(180deg,transparent,rgba(6,21,40,.86) 26%,var(--ink) 75%)}
@@ -467,9 +466,11 @@ const ext='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18L18 6M8 6h1
 const WA='https://wa.me/5512988685845?text=Opa%20Gustavo!%20Vi%20o%20portf%C3%B3lio%20da%20OLC%20Digital%20e%20quero%20um%20site%20profissional%20para%20minha%20empresa.';
 $$('.wa').forEach(a=>a.href=WA);
 
-/* ---------- slider com cards 100% clicáveis e design sob medida ---------- */
-$('#slides').innerHTML=SITES.map(s=>{
+/* ---------- slider com cards 100% clicáveis e design sob medida (leve e rápido) ---------- */
+$('#slides').innerHTML=SITES.map((s,idx)=>{
  const [c1,c2,badge,lay,pat,tag]=s.theme;
+ const eager=idx<=2||idx>=SITES.length-1;
+ const lAttr=eager?'fetchpriority="high"':'loading="lazy"';
  return `<li class="splide__slide">
   <a class="card" href="${s.url}" target="_blank" rel="noopener" draggable="false" data-lay="${lay}" data-pat="${pat}" style="--c1:${c1};--c2:${c2};--badge:${badge}" aria-label="Abrir o site ${esc(s.name)} ao vivo">
    <span class="card__mesh" aria-hidden="true"></span>
@@ -481,10 +482,10 @@ $('#slides').innerHTML=SITES.map(s=>{
     <div class="mock-wrap">
      <div class="mock-mac">
       <div class="mock-bar"><i></i><i></i><i></i><span>Desktop</span></div>
-      <div class="mock-screen"><img src="img/screens/${s.id}-desktop-sm.webp" srcset="img/screens/${s.id}-desktop-sm.webp 720w, img/screens/${s.id}-desktop.webp 1440w" sizes="(max-width:767px) 80vw, 28vw" alt="Versão computador do site ${esc(s.name)}" width="720" height="450" decoding="async" draggable="false"></div>
+      <div class="mock-screen"><img src="img/screens/${s.id}-desktop-sm.webp" ${lAttr} alt="Versão computador do site ${esc(s.name)}" width="720" height="450" decoding="async" draggable="false"></div>
      </div>
      <div class="mock-phone">
-      <div class="mock-phone-in"><img src="img/screens/${s.id}-mobile.webp" alt="Versão celular do site ${esc(s.name)}" width="585" height="1266" decoding="async" draggable="false"></div>
+      <div class="mock-phone-in"><img src="img/screens/${s.id}-mobile.webp" ${lAttr} alt="Versão celular do site ${esc(s.name)}" width="585" height="1266" decoding="async" draggable="false"></div>
      </div>
     </div>
    </div>
